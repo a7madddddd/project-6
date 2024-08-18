@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="053d9ceb2b1746cdb4bc4a4d58dd36e8" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="OnlineStoreModel.cart" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineStoreModel.cart_item" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineStoreModel.category" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineStoreModel.order" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineStoreModel.order_item" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineStoreModel.product" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineStoreModel.transaction" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OnlineStoreModel.user" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <AssociationConnector Association="OnlineStoreModel.cart_item_cart_id_foreign" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineStoreModel.cart_user_id_foreign" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineStoreModel.cart_item_product_id_foreign" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineStoreModel.product_category_id_foreign" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineStoreModel.order_item_order_id_foreign" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineStoreModel.order_transaction_id_foreign" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineStoreModel.order_user_id_foreign" ManuallyRouted="false" />
+        <AssociationConnector Association="OnlineStoreModel.order_item_product_id_foreign" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

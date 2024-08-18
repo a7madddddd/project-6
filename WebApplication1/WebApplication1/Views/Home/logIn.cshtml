@@ -1,0 +1,212 @@
+﻿@model WebApplication1.Models.user
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<style>
+    input {
+        background-color: white;
+    }
+
+    label {
+        color: white;
+    }
+</style>
+
+<div class="mg-page-header-section5 mg-page-header-style">
+    <div class="mg-page-header-inner">
+        <div class="container">
+            <div class="mg-page-header-text">
+                <div class="mg-page-header-heading">
+                    <h3>Login/Register</h3>
+                </div>
+                <div class="mg-breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="text-decoration-none" href="index-2.html">Home</a></li>
+                            <li class="breadcrumb-item active">Login/Register</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mg-login-reg-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mg-login-form mg-login-form-js">
+                    <div class="mg-login-form-heading">
+                        <span>Login</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+
+                    @using (Html.BeginForm("logIn", "Home", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="mg-form-main">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="mg-form-input-field">
+                                        @Html.LabelFor(model => model.email, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="mg-form-input-field">
+                                        @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="mg-check-box">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mg-check-box">
+                                        <label class="form-check-label" for="mg-check-box">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mg-form-submit-btn">
+                                    <input type="submit" value="Log In" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <div class="mg-login-form mg-forget-form mt-3">
+                        <div class="mg-login-form-heading">
+                            <span>Forget password</span>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            </p>
+                        </div>
+                        <form>
+                            <div class="mg-form-main">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="mg-form-input-field">
+                                            <input type="text" placeholder="Username or email address">
+                                        </div>
+                                        <a class="mg-redirect-login" href="javascript:void(0);">Login here</a>
+                                    </div>
+                                    <div class="mg-form-submit-btn">
+                                        <button class="btn">SUBMIT</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mg-account-details-form">
+                    <div class="mg-register-form-heading">
+                        <span>Account Details</span>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                    </div>
+
+                    @using (Html.BeginForm("Register", "Home", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="mg-form-main">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="mg-form-input-field">
+                                        @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="mg-form-input-field">
+                                        @Html.LabelFor(model => model.email, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="mg-form-input-field">
+                                        @Html.LabelFor(model => model.password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        @Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="mg-form-submit-btn">
+                                    <input type="submit" value="Register" class="btn btn-default" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<div class="mg-feature-section-style2 mg-padding-lr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/Icon-material-payment.svg" alt="">
+                            <h6 class="card-title">Worldwide Delivery</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/Icon-feather-shopping-bag.svg" alt="">
+                            <h6 class="card-title">24/7 Help Center</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/delivery-truck.svg" alt="">
+                            <h6 class="card-title">Secure Checkout</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/Icon-ionic-ios-timer.svg" alt="">
+                            <h6 class="card-title">30 Days Return</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

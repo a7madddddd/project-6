@@ -1,0 +1,1548 @@
+﻿@model IEnumerable<WebApplication1.Models.category>
+
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+}
+
+
+
+<main>
+    @*@foreach (var v in Model)
+        {
+            <div class="card" style="width: 18rem; display:flex">
+                <img src="@v.image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@v.name</h5>
+                    <p class="card-text">@v.description</p>
+                    @Html.ActionLink("Show All Products", "showProduct", "Home", new { id = v.id }, new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Show Details", "ProductDetails", "Home", new { id = v.id }, new { @class = "btn btn-primary" })
+                </div>
+            </div>
+        }*@
+
+
+    @*@foreach (var item in Model)
+        {*@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal gx-0 fade mg-search-pop-up" id="search-popup" tabindex="-1" aria-labelledby="search-popup" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close mg-pop-up-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="mg-spcb-bar-one"></span>
+                        <span class="mg-spcb-bar-two"></span>
+                    </button>
+                </div>
+                <div class="modal-body align-items-center d-flex">
+                    <div class="mg-search-pop-form-outer w-100">
+                        <div class="search-heading"></div>
+                        <form class="">
+                            <div class="mg-search-bar-dropdwon">
+                                <select class="form-select mg-font-style">
+                                    <option selected>Category</option>
+                                    <option value="Laptop">Laptop</option>
+                                    <option value="Mobile">Mobile</option>
+                                    <option value="Camera">Camera</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <input class="form-control" type="text" placeholder="What do you need..." aria-label="Search">
+                            <button class="btn" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Pop Up End Here -->
+    <!--Quick view modal start here-->
+    <div class="modal fade mg-quick-view-modal" id="mg-quick-view-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="mg-close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="mg-product-deatils-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-12 p-0">
+                                    <div class="mg-product-slider">
+                                        <div class="mg-quick-view-slider">
+                                            <div class="mg-slide-img">
+                                                <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                            </div>
+                                            <div class="mg-slide-img">
+                                                <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                            </div>
+                                            <div class="mg-slide-img">
+                                                <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                            </div>
+                                            <div class="mg-slide-img">
+                                                <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="mg-qv-next-pre-btn"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div class="mg-product-details-box">
+                                        <div class="mg-product-heading">
+                                            <span>Urban P47 Wireless Headphone</span>
+                                        </div>
+                                        <div class="mg-product-rating">
+                                            <div class="mg-rating">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span class="mg-review">(4.7) Reviews</span>
+                                            </div>
+                                        </div>
+                                        <div class="mg-discount-heading">
+                                            <span>Get 40% Discount</span>
+                                        </div>
+                                    </div>
+                                    <div class="mg-product-details-list">
+                                        <div class="mg-price-tax-box">
+                                            <div class="mg-price">
+                                                <span>Price $200.0</span>
+                                            </div>
+                                            <div class="mg-tax-rate">
+                                                <span> (5% Tax Included)</span>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>Lorem Ipsum is simply dummy text of the printing </li>
+                                            <li>It is a long established fact that a reader</li>
+                                            <li>The point of using Lorem Ipsum The point of using Lorem Ipsum </li>
+                                            <li>It has survived not only five centuries not only five centuries</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mg-feature-option-box">
+                                        <div>
+                                            <div class="mg-selection-title">
+                                                <span>Quantity</span>
+                                            </div>
+                                            <div class="mg-quanitity-option-section d-flex">
+                                                <div class="mg-quanlity-option">
+                                                    <form>
+                                                        <input class="mg-qty-number" value="1" type="text">
+                                                    </form>
+                                                </div>
+                                                <div class="mg-quanlity-option-btn">
+                                                    <button class="mg-qty-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                                                    <button class="mg-qty-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                                                </div>
+                                                <div class="mg-ad-cart-btn ms-3">
+                                                    <a class="mg-shop-btn btn btn-default" href="#">ADD TO CART <i class="fa-solid fa-angle-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mg-additional-info">
+                                        <div class="mg-product-details">
+                                            <div class="mg-product-details-text"><strong>SKU:</strong>  <span>APIPAD-16GB</span></div>
+                                            <div class="mg-product-details-text"><strong>Categories:</strong> <span>Smartphone, Electronic</span></div>
+                                            <div class="mg-product-details-text"><strong>Tag:</strong> <span>Electronic</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Quick view modal end here-->
+    <!--full width Slider section start here-->
+    <div class="mg-slider-section">
+        <div class="mg-slide d-flex align-items-center" style="background-image: url('../images/banner/mg-banner.jpg');">
+            <div class='container mg-slider-text-box'>
+                <div class="mg-slide-text">
+                    <span>I PHONE PRO</span>
+                    <h2>And then the pro comes</h2>
+                    <p>Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.</p>
+                    <div class="mg-price mb-3">Starting from <span>$1,089</span></div>
+                    <a class="mg-shop-btn btn btn-default" href="shop.html">SHOP NOW <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="mg-slide d-flex align-items-center" style="background-image: url('../images/banner/mg-banner.jpg');">
+            <div class='container mg-slider-text-box'>
+                <div class="mg-slide-text">
+                    <span>I PHONE PRO</span>
+                    <h2>And then the pro comes</h2>
+                    <p>Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.</p>
+                    <div class="mg-price mb-3">Starting from <span>$1,089</span></div>
+                    <a class="mg-shop-btn btn btn-default" href="shop.html">SHOP NOW <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="mg-slide d-flex align-items-center" style="background-image: url('../images/banner/mg-banner.jpg');">
+            <div class='container mg-slider-text-box'>
+                <div class="mg-slide-text">
+                    <span>I PHONE PRO</span>
+                    <h2>And then the pro comes</h2>
+                    <p>Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.</p>
+                    <div class="mg-price mb-3">Starting from <span>$1,089</span></div>
+                    <a class="mg-shop-btn btn btn-default" href="shop.html">SHOP NOW <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <!--full width Slider section end here-->
+    <!--Feature section start here-->
+    <div class="mg-feature-section mg-section-padding mg-padding-lr">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/Icon-material-payment.svg" alt="">
+                                <h6 class="card-title">Safe Payment</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/Icon-feather-shopping-bag.svg" alt="">
+                                <h6 class="card-title">Shop With Confidence</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/delivery-truck.svg" alt="">
+                                <h6 class="card-title">World Wide Delivery</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/Icon-ionic-ios-timer.svg" alt="">
+                                <h6 class="card-title">24/6 Help Center</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Feature section end here-->
+    <!--image with text overlay section start here-->
+    <div class="mg-img-overlay-section mg-section-padding mg-padding-lr">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mt-sm-3 mb-sm-3">
+                    <div class="mg-img-overlay-inner">
+                        <div class="mg-img-box">
+                            <img src="~/images/overlay/mg-overlay-img.jpg" alt="">
+                        </div>
+                        <div class="mg-overlay-text">
+                            <div>
+                                <span>GET 50% OFF</span>
+                                <h6>Apple Smart<br> Speaker</h6>
+                                <a class="btn btn-lg" href="shop.html">Shop Now <i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-sm-3 mb-sm-3">
+                    <div class="mg-img-overlay-inner">
+                        <div class="mg-img-box">
+                            <img src="~/images/overlay/mg-overlay-img2.jpg" alt="">
+                        </div>
+                        <div class="mg-overlay-text">
+                            <div>
+                                <span>GET 50% OFF</span>
+                                <h6>Apple Airpods<br> (2nd Gen)</h6>
+                                <a class="btn btn-lg" href="shop.html">Shop Now <i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--image with text overlay section end here-->
+    <!--tabs section start here-->
+    <div class="mg-tabs-section mg-section-padding">
+        <div class="container">
+            <div class="mg-section-heading text-center">
+                <h5>Top Deals Of The Day</h5>
+                <span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</span>
+            </div>
+            <div class="mg-tabs-box mt-3">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="Featured-tab" data-bs-toggle="tab" data-bs-target="#Featured" type="button" role="tab" aria-controls="Featured" aria-selected="true">FEATURED</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Toprated-tab" data-bs-toggle="tab" data-bs-target="#Top-rated" type="button" role="tab" aria-controls="Top-rated" aria-selected="false">TOP RATED</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="Bestseller-tab" data-bs-toggle="tab" data-bs-target="#Bestseller" type="button" role="tab" aria-controls="Bestseller" aria-selected="false">BESTSELLER</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="Featured" role="tabpanel" aria-labelledby="Featured">
+                        <div class="mg-tab-content">
+                            <div class="container">
+                                <div class="row">
+
+
+
+
+
+
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active" id="Featured" role="tabpanel" aria-labelledby="Featured">
+                                            <div class="mg-tab-content">
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        @foreach (var v in Model)
+                                                        {
+                                                            <div class="mg-tab-grid-box" style="width:24em; height:auto; margin-left:2%">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="@v.image" alt="" style="width:100%; height:45vh;"></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div>
+                                                                                @Html.ActionLink("Details", "ProductDetails", "Home", new { id = v.id }, new { @class = "mg-cart-box" })
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>@v.name</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>@v.description</h5></a>
+                                                                    <div class="mg-pricing">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            @*@Html.ActionLink("Show All Products", "showProduct", "Home", new { id = v.id }, new { @class = "btn btn-primary" })*@
+                                                        }
+
+
+
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <!--<div class="col-md-4 col-sm-6 col-6">
+
+
+                                        <div class="mg-tab-grid-box">
+                                            <div class="mg-tab-img-box">
+                                                <div class="mg-tabs-img">
+                                                    <a href="single-product.html"><img src="" alt=""></a>
+                                                </div>
+                                                <div class="mg-overlay">
+                                                    <div class="mg-overlay-icon-box">
+                                                        <div class="mg-overlay-icon text-end">
+                                                            <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="mg-overlay-icon text-end">
+                                                            <a href="javascript:void(0);">
+                                                                <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mg-atc-overlay">
+                                                    <a href="cart.html">
+                                                        <div class="mg-cart-box">-->
+                                        <!--Html.ActionLink("Show Details", "ProductDetails", "Home", new { id = item.id }, new { })*-->
+                                        <!--</div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="mg-tab-text mt-3">
+                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                        <div class="mg-small-heading">
+                                                            <a class="text-decoration-none" href="shop.html"><span>dddd</span></span></a>
+                                                        </div>
+                                                        <div class="mg-wishlist-icon">
+                                                            <a href="#">
+                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <a class="text-decoration-none" href="single-product.html"><h5>ffffff</h5></a>
+                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>-->
+
+
+
+                                        <div class="tab-pane fade" id="Top-rated" role="tabpanel">
+                                            <div class="mg-tab-content">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-6.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>LAPTOP</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>DELL Inspiron Athlon Dual Core</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-3.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>CAMARA</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>NIKON Z 50 Mirrorless Camera</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-2.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>HEADPHONES</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>Uborn P47 Wireless Headphone</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-4.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>SMART WATCH</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>Fire-Boltt Bluetooth Smartwatch</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-1.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>DRONE</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>Apple iPhone 13 Pro SmartPhone</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-5.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>VIDEO </span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>AMKETTE Evo Gamepad Pro 4</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="Bestseller" role="tabpanel">
+                                            <div class="mg-tab-content">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-5.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>LAPTOP</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>DELL Inspiron Athlon Dual Core</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-1.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>DRONE</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>Apple iPhone 13 Pro SmartPhone</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-3.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>CAMARA</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>NIKON Z 50 Mirrorless Camera</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-4.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>SMART WATCH</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>Fire-Boltt Bluetooth Smartwatch</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-2.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>HEADPHONES</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>Uborn P47 Wireless Headphone</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 col-sm-6 col-6">
+                                                            <div class="mg-tab-grid-box">
+                                                                <div class="mg-tab-img-box">
+                                                                    <div class="mg-tabs-img">
+                                                                        <a href="single-product.html"><img src="~/images/products/product-6.jpg" alt=""></a>
+                                                                    </div>
+                                                                    <div class="mg-overlay">
+                                                                        <div class="mg-overlay-icon-box">
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                            <div class="mg-overlay-icon text-end">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-atc-overlay">
+                                                                        <a href="cart.html">
+                                                                            <div class="mg-cart-box">
+                                                                                ADD TO CART
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mg-tab-text mt-3">
+                                                                    <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                        <div class="mg-small-heading">
+                                                                            <a class="text-decoration-none" href="shop.html"><span>VIDEO</span></a>
+                                                                        </div>
+                                                                        <div class="mg-wishlist-icon">
+                                                                            <a href="javascript:void(0);">
+                                                                                <img src="~/images/icons/heart.svg" alt="">
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <a class="text-decoration-none" href="single-product.html"><h5>AMKETTE Evo Gamepad Pro 4</h5></a>
+                                                                    <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!--tabs section end here-->
+                                        <!--Container slider section start here-->
+                                        <div class="mg-container-fit-slider">
+                                            <div class="container">
+                                                <div class="mg-slider-section mg-padding-lr">
+                                                    <div class="mg-slide d-flex align-items-center" style="background-image: url('../images/banner/mg-small-slider.jpg');">
+                                                        <div class='container mg-slider-text-box'>
+                                                            <div class="mg-slide-text">
+                                                                <span>SUPER DEAL</span>
+                                                                <h2>APPLE iPhone 13 Pro Max</h2>
+                                                                <div class="mg-rating">
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span class="mg-review">(168 Reviews)</span>
+                                                                </div>
+                                                                <div class="mg-price mb-4 mb-sm-2"><span>$1,099</span> <s>$1,199</s></div>
+                                                                <a class="mg-shop-btn btn btn-default" href="shop.html">SHOP NOW <i class="fa-solid fa-angle-right"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
+                                                    <div class="mg-slide d-flex align-items-center" style="background-image: url('../images/banner/mg-small-slider.jpg');">
+                                                        <div class='container mg-slider-text-box'>
+                                                            <div class="mg-slide-text">
+                                                                <span>SUPER DEAL</span>
+                                                                <h2>APPLE iPhone 13 Pro Max</h2>
+                                                                <div class="mg-rating">
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span><i class="fa-solid fa-star"></i></span>
+                                                                    <span class="mg-review">(168 Reviews)</span>
+                                                                </div>
+                                                                <div class="mg-price mb-4"><span>$1,099</span> <s>$1,199</s></div>
+                                                                <a class="mg-shop-btn btn btn-default" href="shop.html">SHOP NOW <i class="fa-solid fa-angle-right"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Container slider section end here-->
+                                        <!--Text with background image and carousel section start here-->
+                                        <div class="mg-custome-section mg-section-padding2 mg-padding-lr">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4 mg-margin-tb">
+                                                        <div class="mg-text-bg-style1 mg-text-bg-image1">
+                                                            <div class="mg-img-bg-text">
+                                                                <div>
+                                                                    <span>TOP DEALS</span>
+                                                                    <h6>APPLE 2022<br> MacBook AIR M2</h6>
+                                                                    <a class="btn btn-lg" href="shop.html">SHOP NOW  <i class="fa-solid fa-angle-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-8 mg-margin-tb">
+                                                        <div class="mg-carousel">
+                                                            <div class="mg-craousel-slide">
+                                                                <div class="mg-tab-grid-box">
+                                                                    <div class="mg-tab-img-box">
+                                                                        <div class="mg-tabs-img">
+                                                                            <a href="single-product.html"><img src="~/images/products/product-7.jpg" alt=""></a>
+                                                                        </div>
+                                                                        <div class="mg-overlay">
+                                                                            <div class="mg-overlay-icon-box">
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mg-atc-overlay">
+                                                                            <a href="cart.html">
+                                                                                <div class="mg-cart-box">
+                                                                                    ADD TO CART
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-tab-text mt-3">
+                                                                        <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                            <div class="mg-small-heading">
+                                                                                <a class="text-decoration-none" href="shop.html"><span>VIDEO </span></a>
+                                                                            </div>
+                                                                            <div class="mg-wishlist-icon">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/heart.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a class="text-decoration-none" href="single-product.html"><h5>SONY WH-CH510 Headset</h5></a>
+                                                                        <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mg-craousel-slide">
+                                                                <div class="mg-tab-grid-box">
+                                                                    <div class="mg-tab-img-box">
+                                                                        <div class="mg-tabs-img">
+                                                                            <a href="single-product.html"><img src="~/images/products/product-8.jpg" alt=""></a>
+                                                                        </div>
+                                                                        <div class="mg-overlay">
+                                                                            <div class="mg-overlay-icon-box">
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mg-atc-overlay">
+                                                                            <a href="cart.html">
+                                                                                <div class="mg-cart-box">
+                                                                                    ADD TO CART
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-tab-text mt-3">
+                                                                        <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                            <div class="mg-small-heading">
+                                                                                <a class="text-decoration-none" href="shop.html"><span>LAPTOP</span></a>
+                                                                            </div>
+                                                                            <div class="mg-wishlist-icon">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/heart.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a class="text-decoration-none" href="single-product.html"><h5>Jezebel Spy Camera WiFi</h5></a>
+                                                                        <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mg-craousel-slide">
+                                                                <div class="mg-tab-grid-box">
+                                                                    <div class="mg-tab-img-box">
+                                                                        <div class="mg-tabs-img">
+                                                                            <a href="single-product.html"><img src="~/images/products/product-4.jpg" alt=""></a>
+                                                                        </div>
+                                                                        <div class="mg-overlay">
+                                                                            <div class="mg-overlay-icon-box">
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mg-atc-overlay">
+                                                                            <a href="cart.html">
+                                                                                <div class="mg-cart-box">
+                                                                                    ADD TO CART
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-tab-text mt-3">
+                                                                        <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                            <div class="mg-small-heading">
+                                                                                <a class="text-decoration-none" href="shop.html"><span>LAPTOP</span></a>
+                                                                            </div>
+                                                                            <div class="mg-wishlist-icon">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/heart.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a class="text-decoration-none" href="single-product.html"><h5>DELL Inspiron Athlon Dual Core</h5></a>
+                                                                        <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mg-craousel-slide">
+                                                                <div class="mg-tab-grid-box">
+                                                                    <div class="mg-tab-img-box">
+                                                                        <div class="mg-tabs-img">
+                                                                            <a href="single-product.html"><img src="~/images/products/product-5.jpg" alt=""></a>
+                                                                        </div>
+                                                                        <div class="mg-overlay">
+                                                                            <div class="mg-overlay-icon-box">
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a class="mg-quick-view-modal-btn" href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-remove-red-eye.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="mg-overlay-icon text-end">
+                                                                                    <a href="javascript:void(0);">
+                                                                                        <img src="~/images/icons/Icon-material-compare-arrows.svg" alt="">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="mg-atc-overlay">
+                                                                            <a href="cart.html">
+                                                                                <div class="mg-cart-box">
+                                                                                    ADD TO CART
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="mg-tab-text mt-3">
+                                                                        <div class="mg-tab-text-top d-flex justify-content-between align-items-center">
+                                                                            <div class="mg-small-heading">
+                                                                                <a class="text-decoration-none" href="shop.html"><span>LAPTOP</span></a>
+                                                                            </div>
+                                                                            <div class="mg-wishlist-icon">
+                                                                                <a href="javascript:void(0);">
+                                                                                    <img src="~/images/icons/heart.svg" alt="">
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <a class="text-decoration-none" href="single-product.html"><h5>DELL Inspiron Athlon Dual Core</h5></a>
+                                                                        <div class="mg-pricing">$20.03 <span><s>$30.03</s></span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Text with background image and carousel section end here-->
+                                        <!--Grid with small thumb and Text with background image section start here-->
+                                        <div class="mg-toprated-section mg-padding-lr">
+                                            <div class="container">
+                                                <div class="mg-toprated-heading">
+                                                    <h5>Top Rated Products</h5>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="row">
+                                                            <div class="col-md-6 col-sm-12 col-12">
+                                                                <div class="mg-toprated-grid">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4 col-sm-4 col-4">
+                                                                            <div class="mg-toprated-thumb-img">
+                                                                                <a href="single-product.html"><img src="~/images/gallery/small-thumb-1.jpg" alt=""></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-sm-8 col-8 ps-0 mt-2 mt-md-0">
+                                                                            <div class="mg-toprated-text">
+                                                                                <a href="shop.html"><span>TABLET</span></a>
+                                                                                <a class="text-decoration-none" href="single-product.html"><h6>APPLE iPad (9th Gen)</h6></a>
+                                                                                <div class="mg-pricing">$20.03</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12 col-12">
+                                                                <div class="mg-toprated-grid">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4 col-sm-4 col-4">
+                                                                            <div class="mg-toprated-thumb-img">
+                                                                                <a href="single-product.html"><img src="~/images/gallery/small-thumb-2.jpg" alt=""></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-sm-8 col-8 ps-0 mt-2 mt-md-0">
+                                                                            <div class="mg-toprated-text">
+                                                                                <a href="shop.html"><span>SMART WATCH</span></a>
+                                                                                <a class="text-decoration-none" href="single-product.html"><h6>Noise Smartwatch</h6></a>
+                                                                                <div class="mg-pricing">$20.03</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12 col-12">
+                                                                <div class="mg-toprated-grid">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4 col-sm-4 col-4">
+                                                                            <div class="mg-toprated-thumb-img">
+                                                                                <a href="single-product.html"><img src="~/images/gallery/small-thumb-3.jpg" alt=""></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-sm-8 col-8 ps-0 mt-2 mt-md-0">
+                                                                            <div class="mg-toprated-text">
+                                                                                <a href="shop.html"><span>VIDEO GAME</span></a>
+                                                                                <a class="text-decoration-none" href="single-product.html"><h6>Redgear Pro Gamepad</h6></a>
+                                                                                <div class="mg-pricing">$20.03</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12 col-12">
+                                                                <div class="mg-toprated-grid">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4 col-sm-4 col-4">
+                                                                            <div class="mg-toprated-thumb-img">
+                                                                                <a href="single-product.html"><img src="~/images/gallery/small-thumb-4.jpg" alt=""></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-sm-8 col-8 ps-0 mt-2 mt-md-0">
+                                                                            <div class="mg-toprated-text">
+                                                                                <a href="shop.html"><span>HEADPHONE</span></a>
+                                                                                <a class="text-decoration-none" href="single-product.html"><h6>boAt Rockerz Handset</h6></a>
+                                                                                <div class="mg-pricing">$20.03</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12 col-12">
+                                                                <div class="mg-toprated-grid">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4 col-sm-4 col-4">
+                                                                            <div class="mg-toprated-thumb-img">
+                                                                                <a href="single-product.html"><img src="~/images/gallery/small-thumb-5.jpg" alt=""></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-sm-8 col-8 ps-0 mt-2 mt-md-0">
+                                                                            <div class="mg-toprated-text">
+                                                                                <a href="shop.html"><span>CAMERA</span></a>
+                                                                                <a class="text-decoration-none" href="single-product.html"><h6>NIKON Z5 Camera</h6></a>
+                                                                                <div class="mg-pricing">$20.03</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-12 col-12">
+                                                                <div class="mg-toprated-grid">
+                                                                    <div class="row">
+                                                                        <div class="col-md-4 col-sm-4 col-4">
+                                                                            <div class="mg-toprated-thumb-img">
+                                                                                <a href="single-product.html"><img src="~/images/gallery/small-thumb-6.jpg" alt=""></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-8 col-sm-8 col-8 ps-0 mt-2 mt-md-0">
+                                                                            <div class="mg-toprated-text">
+                                                                                <a href="shop.html"><span>HEADPHONE</span></a>
+                                                                                <a class="text-decoration-none" href="single-product.html"><h6>Fire-Boltt Bluetooth</h6></a>
+                                                                                <div class="mg-pricing">$20.03</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 mg-margin-tb">
+                                                        <div class="mg-text-bg-style2 mg-text-bg-image2">
+                                                            <div class="mg-img-bg-text">
+                                                                <div>
+                                                                    <span>TOP DEALS</span>
+                                                                    <h6>APPLE 2022<br> MacBook AIR M2</h6>
+                                                                    <a class="btn btn-lg" href="shop.html">SHOP NOW  <i class="fa-solid fa-angle-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Grid with small thumb and Text with background image section end here-->
+                                        <!--small banner section start here-->
+                                        <div class="mg-small-banner-section mg-padding-lr">
+                                            <div class="mg-small-banner-text-outer">
+                                                <div class="container">
+                                                    <div class="mg-small-banner-text-inner">
+                                                        <span>GRAND SALE</span>
+                                                        <h6>APPLE iPhone 13. Get 30% Off!</h6>
+                                                        <p>Lorem Ipsum is simply dummy text</p>
+                                                        <a class="btn btn-lg" href="shop.html">SHOP NOW <i class="fa-solid fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--small banner section end here-->
+                                        <!--social media section start here-->
+                                        <div class="mg-social-media-section mg-padding-lr">
+                                            <div class="container">
+                                                <div class="mg-section-heading text-center mb-4">
+                                                    <h5>Follow us on Instagram</h5>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-2 col-md-2 col-6 mt-4">
+                                                        <div class="mg-social-media-thumb">
+                                                            <a href="javascript:void(0);">
+                                                                <img src="~/images/gallery/social-thumbs-5.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-6 mt-4">
+                                                        <div class="mg-social-media-thumb">
+                                                            <a href="javascript:void(0);">
+                                                                <img src="~/images/gallery/social-thumbs-4.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-6 mt-4">
+                                                        <div class="mg-social-media-thumb">
+                                                            <a href="javascript:void(0);">
+                                                                <img src="~/images/gallery/social-thumbs-3.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-6 mt-4">
+                                                        <div class="mg-social-media-thumb">
+                                                            <a href="javascript:void(0);">
+                                                                <img src="~/images/gallery/social-thumbs-2.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-6 mt-4">
+                                                        <div class="mg-social-media-thumb">
+                                                            <a href="javascript:void(0);">
+                                                                <img src="~/images/gallery/social-thumbs-1.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-md-2 col-6 mt-4">
+                                                        <div class="mg-social-media-thumb">
+                                                            <a href="javascript:void(0);">
+                                                                <img src="~/images/gallery/social-thumbs-6.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--social media section end here-->
+    <!--footer section start here-->
+    <!--footer section end here-->
+    <!--Back To Top Button Start Here-->
+    <div id="back-top" style="display: none;">
+        <a class="text-decoration-none" title="Go to Top" href="#"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+    <!--Back To Top Button End Here-->
+    <script src="~/js/mg-menu.js"></script>
+    <script src="~/js/mg-common.js"></script>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

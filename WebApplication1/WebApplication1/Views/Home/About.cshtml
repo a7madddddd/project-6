@@ -1,0 +1,522 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+}
+
+
+<!--MG Header End Here-->
+<!-- Search Pop Up -->
+<div class="modal gx-0 fade mg-search-pop-up" id="search-popup" tabindex="-1" aria-labelledby="search-popup" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close mg-pop-up-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <span class="mg-spcb-bar-one"></span>
+                    <span class="mg-spcb-bar-two"></span>
+                </button>
+            </div>
+            <div class="modal-body align-items-center d-flex">
+                <div class="mg-search-pop-form-outer w-100">
+                    <div class="search-heading"></div>
+                    <form class="">
+                        <div class="mg-search-bar-dropdwon">
+                            <select class="form-select mg-font-style">
+                                <option selected>Category</option>
+                                <option value="Laptop">Laptop</option>
+                                <option value="Mobile">Mobile</option>
+                                <option value="Camera">Camera</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <input class="form-control" type="text" placeholder="What do you need..." aria-label="Search">
+                        <button class="btn" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Search Pop Up End Here -->
+<!--Quick view modal start here-->
+<div class="modal fade mg-quick-view-modal" id="mg-quick-view-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="mg-close-btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                <div class="mg-product-deatils-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mg-product-slider">
+                                    <div class="mg-slide-img-main mg-quick-view-slider">
+                                        <div class="mg-slide-img">
+                                            <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                        </div>
+                                        <div class="mg-slide-img">
+                                            <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                        </div>
+                                        <div class="mg-slide-img">
+                                            <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                        </div>
+                                        <div class="mg-slide-img">
+                                            <img src="~/images/product-slider/product-slider1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="mg-qv-next-pre-btn"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="mg-product-details-box">
+                                    <div class="mg-product-heading">
+                                        <span>Urban P47 Wireless Headphone</span>
+                                    </div>
+                                    <div class="mg-product-rating">
+                                        <div class="mg-rating">
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span><i class="fa-solid fa-star"></i></span>
+                                            <span class="mg-review">(4.7) Reviews</span>
+                                        </div>
+                                    </div>
+                                    <div class="mg-discount-heading">
+                                        <span>Get 40% Discount</span>
+                                    </div>
+                                </div>
+                                <div class="mg-product-details-list">
+                                    <div class="mg-price-tax-box">
+                                        <div class="mg-price">
+                                            <span>Price $200.0</span>
+                                        </div>
+                                        <div class="mg-tax-rate">
+                                            <span> (5% Tax Included)</span>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>Lorem Ipsum is simply dummy text of the printing </li>
+                                        <li>It is a long established fact that a reader</li>
+                                        <li>The point of using Lorem Ipsum The point of using Lorem Ipsum </li>
+                                        <li>It has survived not only five centuries not only five centuries</li>
+                                    </ul>
+                                </div>
+                                <div class="mg-feature-option-box">
+                                    <div>
+                                        <div class="mg-selection-title">
+                                            <span>Quantity</span>
+                                        </div>
+                                        <div class="mg-quanitity-option-section d-flex">
+                                            <div class="mg-quanlity-option">
+                                                <form>
+                                                    <input class="mg-qty-number" value="1" type="text">
+                                                </form>
+                                            </div>
+                                            <div class="mg-quanlity-option-btn">
+                                                <button class="mg-qty-plus-btn"><i class="fa-solid fa-plus"></i></button>
+                                                <button class="mg-qty-minus-btn"><i class="fa-solid fa-minus"></i></button>
+                                            </div>
+                                            <div class="mg-ad-cart-btn ms-3">
+                                                <a class="mg-shop-btn btn btn-default" href="#">ADD TO CART <i class="fa-solid fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mg-additional-info">
+                                    <div class="mg-product-details">
+                                        <div class="mg-product-details-text"><strong>SKU:</strong>  <span>APIPAD-16GB</span></div>
+                                        <div class="mg-product-details-text"><strong>Categories:</strong> <span>Smartphone, Electronic</span></div>
+                                        <div class="mg-product-details-text"><strong>Tag:</strong> <span>Electronic</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Quick view modal end here-->
+<!--page header start here-->
+<div class="mg-page-header-section2 mg-page-header-style">
+    <div class="mg-page-header-inner">
+        <div class="container">
+            <div class="mg-page-header-text">
+                <div class="mg-page-header-heading">
+                    <h3>About MG Wirez.</h3>
+                </div>
+                <div class="mg-breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="text-decoration-none" href="index-2.html">Home</a></li>
+                            <li class="breadcrumb-item active">About</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--page header end here-->
+<!--about us with image section start here-->
+<div class="mg-about-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="mg-about-image">
+                    <img src="~/images/gallery/about-image.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                <div class="mg-about-text-outer">
+                    <div class="mg-about-text-inner">
+                        <span>ABOUT US</span>
+                        <h5>Welcome to MG WIREZ Electronic Store</h5>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            It has survived not only five centurie
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry
+                        </p>
+                        <a class="mg-shop-btn btn btn-default" href="shop.html">SHOP NOW <i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-md-3 mt-lg-0 mt-sm-3 mt-5">
+                <div class="row">
+                    <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                        <div class="mg-about-small-image1">
+                            <img src="~/images/gallery/about-small-image.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-sm-6 col-6">
+                        <div class="mg-about-small-image2">
+                            <img src="~/images/gallery/about-small-image2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--about us with image section end here-->
+<!--video section start here-->
+<div class="mg-video-section">
+    <div class="container">
+        <div class="mg-video-bg-img">
+            <div class="mg-video-play-btn">
+                <a class="mg-video-popup" href="https://www.youtube.com/watch?v=Zv11L-ZfrSg"><img src="~/images/icons/video-play.png" alt=""></a>
+            </div>
+            <div class="mg-video-img-overtext">
+                <h5>Found your Dream Electronic?</h5>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--video section end here-->
+<!--our team section start here-->
+<div class="mg-team-section">
+    <div class="mg-section-heading text-center">
+        <span>OUR TEAM</span>
+        <h5>Meet Our Crew</h5>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="mg-our-team-box">
+                    <div class="mg-team-image">
+                        <img src="~/images/team-and-testimonial/team3.png" alt="">
+                        <div class="mg-team-info-box-inner">
+                            <div class="mg-team-info">
+                                <h5>Garbriela Matthews</h5>
+                                <span>CHIEF ADMIN</span>
+                            </div>
+                            <div class="mg-team-social-link">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/fb.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/insta.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/linkedin.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/twitter.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="mg-our-team-box">
+                    <div class="mg-team-image">
+                        <img src="~/images/team-and-testimonial/team3.png" alt="">
+                        <div class="mg-team-info-box-inner">
+                            <div class="mg-team-info">
+                                <h5>Garbriela Matthews</h5>
+                                <span>CHIEF ADMIN</span>
+                            </div>
+                            <div class="mg-team-social-link">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/fb.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/insta.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/linkedin.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/twitter.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="mg-our-team-box">
+                    <div class="mg-team-image">
+                        <img src="~/images/team-and-testimonial/team3.png" alt="">
+                        <div class="mg-team-info-box-inner">
+                            <div class="mg-team-info">
+                                <h5>Garbriela Matthews</h5>
+                                <span>CHIEF ADMIN</span>
+                            </div>
+                            <div class="mg-team-social-link">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/fb.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/insta.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/linkedin.jpg" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);"><img src="~/images/icons/twitter.jpg" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--our team section end here-->
+<!--Testimonial section start here-->
+<div class="mg-testimonial-section">
+    <div class="mg-section-heading text-center">
+        <span>TESTIMONIAL</span>
+        <h5>what our Customers Says</h5>
+    </div>
+    <div class="container">
+        <div class="mg-testimonial-carousel">
+            <div class="mg-testimonial-content">
+                <div class="mg-testimonial-image">
+                    <img src="~/images/icons/comma.png" alt="">
+                </div>
+                <div class="mg-testimonial-text text-center">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+                <div class="mg-customer-info">
+                    <div class="mg-customer-img">
+                        <img src="~/images/team-and-testimonial/testimonial-img.jpg" alt="">
+                    </div>
+                    <div class="mg-customer-name">
+                        <span>Carolina Martinez</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mg-testimonial-content">
+                <div class="mg-testimonial-image">
+                    <img src="~/images/icons/comma.png" alt="">
+                </div>
+                <div class="mg-testimonial-text text-center">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+                <div class="mg-customer-info">
+                    <div class="mg-customer-img">
+                        <img src="~/images/team-and-testimonial/testimonial-img.jpg" alt="">
+                    </div>
+                    <div class="mg-customer-name">
+                        <span>Carolina Martinez</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mg-testimonial-content">
+                <div class="mg-testimonial-image">
+                    <img src="~/images/icons/comma.png" alt="">
+                </div>
+                <div class="mg-testimonial-text text-center">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+                <div class="mg-customer-info">
+                    <div class="mg-customer-img">
+                        <img src="~/images/team-and-testimonial/testimonial-img.jpg" alt="">
+                    </div>
+                    <div class="mg-customer-name">
+                        <span>Carolina Martinez</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mg-testimonial-content">
+                <div class="mg-testimonial-image">
+                    <img src="~/images/icons/comma.png" alt="">
+                </div>
+                <div class="mg-testimonial-text text-center">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+                <div class="mg-customer-info">
+                    <div class="mg-customer-img">
+                        <img src="~/images/team-and-testimonial/testimonial-img.jpg" alt="">
+                    </div>
+                    <div class="mg-customer-name">
+                        <span>Carolina Martinez</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Testimonial section end here-->
+<!--social media section start here-->
+<div class="mg-social-media-section mg-padding-lr">
+    <div class="container">
+        <div class="mg-section-heading text-center mb-4">
+            <h5>Follow us on Instagram</h5>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-6 mt-4">
+                <div class="mg-social-media-thumb">
+                    <a href="javascript:void(0);">
+                        <img src="~/images/gallery/social-thumbs-5.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mt-4">
+                <div class="mg-social-media-thumb">
+                    <a href="javascript:void(0);">
+                        <img src="~/images/gallery/social-thumbs-4.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mt-4">
+                <div class="mg-social-media-thumb">
+                    <a href="javascript:void(0);">
+                        <img src="~/images/gallery/social-thumbs-3.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mt-4">
+                <div class="mg-social-media-thumb">
+                    <a href="javascript:void(0);">
+                        <img src="~/images/gallery/social-thumbs-2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mt-4">
+                <div class="mg-social-media-thumb">
+                    <a href="javascript:void(0);">
+                        <img src="~/images/gallery/social-thumbs-1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-6 mt-4">
+                <div class="mg-social-media-thumb">
+                    <a href="javascript:void(0);">
+                        <img src="~/images/gallery/social-thumbs-6.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--social media section end here-->
+<!--Feature section 2 start here-->
+<div class="mg-feature-section-style2 mg-padding-lr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/Icon-material-payment.svg" alt="">
+                            <h6 class="card-title">Worldwide Delivery</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/Icon-feather-shopping-bag.svg" alt="">
+                            <h6 class="card-title">24/7 Help Center</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/delivery-truck.svg" alt="">
+                            <h6 class="card-title">Secure Checkout</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                <div class="mg-feature-box">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="~/images/icons/Icon-ionic-ios-timer.svg" alt="">
+                            <h6 class="card-title">30 Days Return</h6>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Feature section 2 end here-->
+<!--footer section start here-->

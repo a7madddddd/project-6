@@ -1,0 +1,214 @@
+﻿@model WebApplication1.Models.cart
+
+@{
+    ViewBag.Title = "Your Cart";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+}
+
+
+<div class="mg-page-header-section6 mg-page-header-style">
+    <div class="mg-page-header-inner">
+        <div class="container">
+            <div class="mg-page-header-text">
+                <div class="mg-page-header-heading">
+                    <h3>Shopping Cart</h3>
+                </div>
+                <div class="mg-breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="text-decoration-none" href="index-2.html">Home</a></li>
+                            <li class="breadcrumb-item active">Cart</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+<div class="container mt-5">
+    <h2>Your Cart</h2>
+
+    @if (Model != null && Model.cart_item.Any())
+        {
+    <table class="table table-bordered table-hover mt-3">
+        <thead class="thead-dark">
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.cart_item)
+                    {
+            <tr>
+                <td>@item.product.name</td>
+                <td>
+                    <div class="input-group">
+                        @Html.ActionLink("-", "UpdateQuantity", "Home", new { id = item.id, change = -1 }, new { @class = "btn btn-secondary" })
+                        <span class="mx-2">@item.quantity</span>
+                        @Html.ActionLink("+", "UpdateQuantity", "Home", new { id = item.id, change = 1 }, new { @class = "btn btn-secondary" })
+                    </div>
+                </td>
+                <td>@item.product.price.ToString("C")</td>
+                <td>@(item.quantity * item.product.price)</td>
+                <td>
+                    @Html.ActionLink("Remove", "RemoveFromCart", "Home", new { id = item.id }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+                    }
+        </tbody>
+    </table>
+
+    <div class="text-right">
+        <h4>Total: @Model.cart_item.Sum(i => i.quantity * i.product.price)</h4>
+        @Html.ActionLink("Checkout", "Checkout", "Home", null, new { @class = "btn btn-success mt-3" })
+    </div>
+        }
+        else
+        {
+    <p>Your cart is empty.</p>
+    @Html.ActionLink("Continue Shopping", "Index", "Home", null, new { @class = "btn btn-primary mt-3" })
+        }
+</div>
+<br />
+<br />
+<br />
+<br />
+
+
+
+
+
+<div class="mg-cart-section">
+
+    <!--cart section end here-->
+    <!--related products start here-->
+    <div class="mg-related-product-section">
+        <div class="container">
+            <div class="mg-related-product-inner">
+                <div class="mg-related-product-heading">
+                    <span>You May also Like...</span>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6 mg-rp-main">
+                        <div class="mg-related-product-box">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <div class="mg-related-product-image">
+                                        <a href="#"><img src="~/images/gallery/related-product-img.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <div class="mg-related-product-info">
+                                        <span><a href="shop.html">TABLET</a></span>
+                                        <div><a href="single-product.html">APPLE ipad (9th Gen)</a></div>
+                                        <div class="mg-pricing">$20.03</div>
+                                        <a class="btn" href="cart.html">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6 mg-rp-main">
+                        <div class="mg-related-product-box">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <div class="mg-related-product-image">
+                                        <a href="#"><img src="~/images/gallery/related-product-img.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <div class="mg-related-product-info">
+                                        <span><a href="shop.html">TABLET</a></span>
+                                        <div><a href="single-product.html">APPLE ipad (9th Gen)</a></div>
+                                        <div class="mg-pricing">$20.03</div>
+                                        <a class="btn" href="cart.html">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-6 mg-rp-main">
+                        <div class="mg-related-product-box">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-5">
+                                    <div class="mg-related-product-image">
+                                        <a href="#"><img src="~/images/gallery/related-product-img.jpg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-7">
+                                    <div class="mg-related-product-info">
+                                        <span><a href="shop.html">TABLET</a></span>
+                                        <div><a href="single-product.html">APPLE ipad (9th Gen)</a></div>
+                                        <div class="mg-pricing">$20.03</div>
+                                        <a class="btn" href="cart.html">ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--related products end here-->
+    <!--Feature section 2 start here-->
+    <div class="mg-feature-section-style2 mg-padding-lr">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/Icon-material-payment.svg" alt="">
+                                <h6 class="card-title">Worldwide Delivery</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/Icon-feather-shopping-bag.svg" alt="">
+                                <h6 class="card-title">24/7 Help Center</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/delivery-truck.svg" alt="">
+                                <h6 class="card-title">Secure Checkout</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-sm-6 mt-4 mg-feature-service">
+                    <div class="mg-feature-box">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <img src="~/images/icons/Icon-ionic-ios-timer.svg" alt="">
+                                <h6 class="card-title">30 Days Return</h6>
+                                <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Feature section 2 end here-->
+    <!--footer section start here-->
+
+</div>

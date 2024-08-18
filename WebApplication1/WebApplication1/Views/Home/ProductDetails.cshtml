@@ -1,0 +1,20 @@
+﻿@model WebApplication1.Models.product
+
+@{
+    ViewBag.Title = "ProductDetails";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+
+}
+
+<div style="margin:5%;">
+    <h1>@Model.name</h1>
+    <img src="@Model.image_url" style="width: 30%; height: 17vh;" />
+    <p>@Model.discription</p>
+    <p>@Model.price</p>
+    @Html.ActionLink("Show All Products", "ShowProducts", "Home", new { id = Model.id }, new { @class = "btn btn-primary" })
+
+    @Html.ActionLink("Add To Cart", "AddToCart", "Home", new { id = Model.id }, new { @class = "btn btn-primary" })
+
+
+
+</div>

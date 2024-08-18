@@ -1,0 +1,22 @@
+﻿@model WebApplication1.Models.cart_item
+
+@{
+    ViewBag.Title = "Product Added to Cart";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="alert alert-success text-center" role="alert">
+                <h4 class="alert-heading">Product Added to Cart!</h4>
+                <p>You have successfully added <strong>@Model.product.name</strong> to your cart.</p>
+                <hr>
+                <p class="mb-0">You can continue shopping or view your cart.</p>
+            </div>
+            <div class="text-center mt-4">
+                @Html.ActionLink("Continue Shopping", "Index", "Home", null, new { @class = "btn btn-secondary" })
+                @Html.ActionLink("View Cart", "Cart", "Home", null, new { @class = "btn btn-primary ml-2" })
+            </div>
+        </div>
+    </div>
+</div>

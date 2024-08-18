@@ -1,0 +1,3287 @@
+@media screen and (max-width: 1199px) {
+    /*
+    * Slider section
+    */
+    .mg-slide-text {
+        width: 50%;
+    }
+    .mg-slide-text h2 {
+        font-size: 41px;
+    }
+    .mg-slide {
+        height: 500px;
+    }
+    /**********************/
+    
+    
+    /*
+    *image with text overlay section
+    */
+    .mg-overlay-text h6 {
+        margin-bottom: 26px;
+    }
+    /**********************/
+    
+    /*
+    *header filter section
+    */
+    .mg-category-filter .dropdown span {
+        margin-right: 30px;
+    }
+    .mg-logo {
+        font-size: 23px;
+    }
+    .mg-login a {
+        font-size: 10px;
+    }
+    .mg-login span {
+        font-size: 10px;
+    }
+    .header-icons-outer ul li img {
+        max-width: 15px;
+    }
+    .mg-header-icon-counter {
+        left: 10px;
+        min-width: 16px;
+        height: 16px;
+    }
+    /*
+    *quick view popup
+    */
+    .mg-quick-view-modal .mg-product-details-box .mg-product-heading {
+        font-size: 24px;
+    }
+    .mg-quick-view-modal .mg-product-rating span.mg-review {
+        font-size: 12px;
+    }
+    .mg-quick-view-modal .mg-rating {
+        margin-bottom: 0px;
+    }
+    .mg-quick-view-modal .mg-discount-heading span {
+        font-size: 14px;
+    }
+    .mg-quick-view-modal .mg-feature-option-box {
+        padding: 8px 15px;
+    }
+    .mg-quick-view-modal a.mg-shop-btn {
+        padding: 13px 20px;
+        font-size: 12px;
+    }
+    /***********************************/
+    /*************************/
+    
+            /*
+            * Shop page style here
+            */
+    
+    /*
+    *Grid filter section
+    */
+    .mg-select-range select.form-select {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .mg-range-slide span {
+        font-size: 12px;
+    }
+    .mg-range-bar {
+        width: 250px;
+        padding: 17px 10px;
+    }
+    .mg-range-price  span.mg-rp-heading {
+        font-size: 12px;
+    }
+    .mg-range-price span {
+        font-size: 12px;
+    }
+    .mg-grid-icons img {
+        width: 36px;
+    }
+    /**********************************/
+    /*************************************************/
+    
+            /*
+            *Single-product page
+            */
+    /*
+    *product details section
+    */       
+    .mg-selection label.form-check-label {
+        padding: 4px 5px;
+        font-size: 10px;
+    }
+    .mg-feature-info-text span {
+        font-size: 12px;
+    }
+    .mg-product-details-box .mg-product-heading {
+        font-size: 20px;
+    }
+    .mg-discount-heading span {
+        font-size: 18px;
+    }
+    .mg-price-tax-box span {
+        font-size: 14px;
+    }
+    .mg-product-details-list ul li {
+        font-size: 10px;
+    }
+    .mg-product-details-list ul {
+        margin-bottom: 5px;
+    }
+    .mg-feature-info-box {
+        padding: 12px 18px;
+    }
+    .mg-additional-info .mg-product-details {
+        margin-top: 0px;
+    }
+    .mg-feature-section-style3 {
+        padding: 8px 15px;
+    }
+    /************************/
+    /************************************/
+    
+            /*
+            *about us page
+            */
+    
+            
+    /*
+    *about us with image section
+    */
+    .mg-about-text-inner h5 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .mg-about-text-inner a.mg-shop-btn.btn.btn-default {
+        margin-top: 10px;
+    }
+    /*******************************/
+    
+            /*
+            *blogs page
+            */
+    
+    /*
+    *blogs grid section
+    */
+    .mg-blogs-grid-box .mg-img-bg-text h6 {
+        font-size: 20px;
+        margin-bottom: 55px;
+    }
+    .mg-blogs-grid-box .mg-img-bg-text span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    .mg-blogs-grid-box .mg-img-bg-text {
+        padding: 30px 30px;
+    }
+    .mg-blogs-grid-box .mg-img-bg-text h6 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    /*************************/
+            /*
+            *single blog page
+            */
+            
+    /*
+    *comment section
+    */
+    .mg-comment-user-image img {
+        width: 125px;
+        height: 125px;
+    }
+    /************/
+    /**********************/
+    
+        /*
+        *cart page
+        */
+        
+    /*
+    *realted product section
+    */
+    .mg-related-product-info a.btn {
+        font-size: 10px;
+        padding: 8px 22px;
+        margin-top: 4px;
+    }
+    .mg-related-product-info a {
+        font-size: 14px;
+    }
+    /****************/
+    /***********************/
+    
+            /*
+            *my profile page
+            */
+            
+    /*
+    *profile section
+    */
+    .mg-my-profile-edit-details {
+        padding: 30px 10px;
+    }
+    .mg-my-profile {
+        padding: 50px 16px;
+    }
+    .mg-my-profile-details h5 { 
+        font-size: 20px;
+    }
+    /******************/
+    /**************************/
+    
+              /*
+              *contact us page
+              */
+    /*
+    *contact us section
+    */
+    .mg-contact-info-heading h5 {
+        font-size: 24px;
+    }
+    .mg-git-form-heading h5 {
+        font-size: 24px;
+    }
+    /***************/
+    /******************/
+               /*
+               *List view page
+               */
+               
+    /*
+    *list view section
+    */
+    .mg-lvc-heading a h5 {
+        font-size: 20px;
+    }
+    /********************/
+    /****************************/
+    
+                /*
+                *home 2 page style
+                */
+     /*
+     *home 2 mobile header
+     */
+    .mg-home2-header-outer ul.menu-section.mg-menu-outer {
+        background-color: #171717;
+    }
+    .mg-home2-header-outer .menu-mobile-header {
+        background-color: #171717;
+    }
+    .mg-home2-header-outer .menu-mobile-arrow i {
+        color: #fff;
+    }
+     /******************/
+    /*
+    *home 2 top products section
+    */
+    .mg-top-products-box {
+        padding: 0px 22px 0px 22px;
+        margin-top: 22px;
+    }
+    .mg-tp-product-grid-main {
+        margin: 0px -8px;
+    }
+    .mg-home2-header-outer .menu-subs.active {
+        background-color: #171717;
+    }
+    .mg-home2-header-outer .mg-menu-outer .menu-subs ul li a {
+        color: #171717;
+    }
+    .mg-home2-header-outer .menu-mobile-title {
+        color: #eee;
+    }
+    /***************/
+    /*
+    *backhround image with text and product list
+    */
+    .mg-product-list-content h5 {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .mg-pricing {
+        font-size: 16px;
+    }
+    .mg-img-product-list-section .mg-cf-bg-img {
+        height: 340px;
+    }
+    /************/
+    /*
+    *home 2 tab section
+    */
+    .mg-home2-tab-section {
+        margin-top: 50px;
+    }
+    /****************/
+    /*
+    *feature and image overlay section
+    */
+    .mg-feature-box img {
+        margin-bottom: 10px;
+    }
+    .mg-feature-box .card-title {
+        font-size: 13px;
+    }
+    .mg-feature-box .card-text {
+        font-size: 12px;
+    }
+    .mg-home2-feature-section-heading p {
+        margin-bottom: 2px;
+    }
+    .mg-home2-feature-section .mg-feature-box .card .card-body {
+        padding-right: 0;
+    }
+    .mg-overlay-text {
+        align-items: center;
+    }
+    .mg-home2-feature-section .mg-feature-box {
+        margin-top: 0;
+    }
+    .mg-home2-feature-section .mg-feature-box .card-text {
+        font-size: 12px;
+    }
+    /*****************/
+    /*****************************/
+            /*
+            *home 3 page style
+            */
+    /*
+    *tab section
+    */
+    .mg-tab-text h5 {
+        font-size: 13px;
+    }
+    .mg-home3-tab-section .mg-pricing {
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 1025px) {
+    .mg-tab-grid-box:hover .mg-atc-overlay {
+        opacity: 1;
+    }
+    .mg-tab-grid-box:hover .mg-overlay {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 991px){
+     /*
+    *header section
+    */
+    .header-icons-outer li.mg-profile-icon {
+        display: inline-block;
+    }
+    .mg-login-box {
+        display: none;
+    }
+    .header-icons-outer {
+        border-left: none;
+    }
+    .header-icons-outer ul li {
+        padding: 0px;
+    }
+        .mg-login {
+        display: none;
+    }
+    .mg-home2-header-outer .mg-menu-outer .menu-subs ul li a {
+        color: #eee;
+    }
+    /**********************************/
+    
+    /*
+    *header filter section
+    */
+    .mg-category-filter .dropdown a.mg-dropdown-btn {
+        font-size: 10px;
+        padding: 14px 10px;
+    }
+    .mg-category-filter .dropdown span {
+        margin-right: 20px;
+    }
+    .mg-category-filter .dropdown span {
+        margin-left: 5px;
+        font-size: 10px;
+    }
+    .mg-search-bar-dropdwon select.form-select.mg-font-style {
+        width: 109px;
+    }
+    .mg-search-filed input {
+        font-size: 10px;
+        width: 100px;
+    }
+    .mg-search-filed button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+    .mg-contact-info a {
+        font-size: 12px;
+    }
+    .mg-search-filed {
+        width: 100%;
+    }
+    .mg-search-filed input {
+        width: 110px;
+        padding: 0;
+    }
+    /********************************/
+    /*
+    *Home 1 feature section
+    */
+    .mg-feature-box .card-title {
+        font-size: 18px;
+    }
+    .mg-feature-box .card-text {
+        font-size: 16px;
+    }
+    .mg-feature-box img {
+        width: 26px;
+        margin-bottom: 20px;
+    }
+    /*********************/
+    /*
+    * Search popup section
+    */
+   
+    .mg-search-pop-form-outer select.form-select.mg-font-style {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: #010101;
+        color: #fff;
+        border: 1px solid rgba(255,255,255, 0.5);
+    }
+    .mg-search-pop-form-outer {
+        text-align: center;
+    }
+    .mg-search-pop-form-outer button.btn {
+        margin-top: 20px;
+        background-color: transparent;
+        font-family: 'Sora-Medium';
+        padding: 8px 26px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 0;
+    }
+    .mg-search-pop-form-outer button.btn:hover {
+        background-color: #fff;
+        color: #000;
+    }
+    .mg-search-pop-form-outer .mg-search-filed input::placeholder {
+        color: #fff;
+    }
+    .form-control:focus {
+        border-color: rgba(255,255,255, 0.5);
+        color: #fff;
+    }
+    /********************************/
+    
+    /*
+    *quick view popup
+    */
+    .mg-quick-view-modal .mg-product-details-box .mg-product-heading {
+        font-size: 14px;
+    }
+    .mg-quick-view-modal .mg-product-rating span.mg-review {
+        font-size: 8px;
+    }
+    .mg-quick-view-modal .mg-discount-heading span {
+        font-size: 12px;
+    }
+    .mg-quick-view-modal .mg-product-rating .mg-rating {
+        margin-bottom: 0;
+    }
+    .mg-quick-view-modal .mg-price-tax-box span {
+        font-size: 10px;
+        margin-right: 4px;
+    }
+    .mg-quick-view-modal .mg-product-details-list ul li {
+        font-size: 8px;
+    }
+    .mg-quick-view-modal .mg-product-details-text {
+        font-size: 9px;
+    }
+    .mg-quick-view-modal button.mg-close-btn {
+        right: 12px;
+        top: 14px;
+        padding: 8px 12px;
+    }
+    .mg-qv-next-pre-btn button {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .mg-qv-next-pre-btn {
+        bottom: 70px;
+    }
+    /****************************/
+    /*
+    *home 3 feature section
+    */
+    .mg-home3-feature-box-main {
+        border: none;
+    }
+    /******************/
+    /*
+    * image with text overlay section
+    */
+    
+    .mg-overlay-text h6 {
+        font-size: 18px;
+    }
+    .mg-overlay-text a {
+        font-size: 10px;
+        padding: 7px 24px;
+    }
+    .mg-overlay-text h6 {
+        margin-bottom: 12px;
+    }
+    /***************************/
+    
+    /*
+    * Tab section
+    */
+    .mg-home3-tab-section .mg-tabs-box .nav-tabs .nav-link.active {
+        font-size: 14px;
+    }
+    .mg-home3-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        font-size: 14px;
+    }
+    .mg-section-heading h5 {
+        font-size: 26px;
+        }
+    .mg-section-heading span {
+        font-size: 12px;
+        font-family: 'Sora-Medium';
+    }
+    .mg-tabs-box .nav-tabs .nav-link {
+        padding: 10px 30px;
+        font-size: 10px;
+    }
+    .mg-tabs-box .nav-tabs .nav-link.active {
+        padding: 10px 30px;
+        font-size: 10px;
+    }
+    .mg-tab-text .mg-small-heading a {
+        font-size: 10px;
+    }
+    .mg-tab-text h5 {
+        font-size: 12px;
+    }
+    .mg-pricing {
+        font-size: 16px;
+    }
+    .mg-pricing span {
+        font-size: 13px;
+    }
+    .mg-cart-box a {
+        font-size: 11px;
+    }
+    /********************************/
+    /*
+    * Container fit silder section
+    */
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text {
+        width: 50%;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide {
+        height: 350px;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text h2 {
+        font-size: 22px;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text > span {
+        font-size: 10px;
+    }
+    .mg-rating span i {
+        font-size: 11px;
+    }
+    .mg-rating .mg-review {
+        font-size: 11px;
+        margin-left: 2px;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-price span {
+        font-size: 22px;
+        margin-right: 2px;
+    }
+    /*********************************/
+    
+    /*
+    *Text with background image and carousel section
+    */
+    
+    a.mg-shop-btn {
+        padding: 10px 30px;
+        font-size: 11px;
+    }
+    .mg-custome-section .mg-overlay-text a {
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    .mg-overlay-text a {
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    .mg-img-bg-text {
+        padding: 16px 40px;
+    }
+    .mg-img-bg-text h6 {
+        font-size: 20px;
+        margin-bottom: 55px;
+    }
+    .mg-img-bg-text  a {
+        font-size: 12px;
+        padding: 8px 25px;
+    }
+    /********************************************/
+    /*
+    *Grid with small thumb and text with background section
+    */
+    
+    .mg-toprated-text a h6 {
+        font-size: 10px;
+        margin-bottom: 1px;
+    }
+    .mg-toprated-grid .mg-pricing {
+        font-size: 10px;
+    }
+    .mg-toprated-grid {
+        padding: 6px;
+        margin-top: 10px;
+        margin-bottom: 11px;
+        width: 100%;
+    }
+    /*************************/
+    
+    /*
+    *small banner section
+    */
+    .mg-small-banner-text-inner a {
+        font-size: 11px;
+        padding: 10px 30px;
+    }
+    .mg-small-banner-text-inner h6 {
+        font-size: 26px;
+    }
+    /*******************/
+    
+    /*
+    * footer section
+    */
+    .mg-footer-bio p {
+        font-size: 11px;
+    }
+    .mg-footer-bio {
+        width: 80%;
+    }
+    .mg-newsletter-outer h6 {
+        font-size: 12px;
+    }
+    .mg-newsletter-outer span {
+        font-size: 11px;
+    }
+    .mg-footer-link ul li {
+        line-height: 1.5;
+    }
+    .mg-footer-link ul li a {
+        font-size: 11px;
+    }
+    .mg-newsletter-inner input.form-control {
+        font-size: 11px;
+    }
+    .mg-newsletter-inner button {
+        padding: 4px 11px;
+    }
+        /*
+        * Shop page style here
+        */
+    
+    /*
+    *Page Header section
+    */
+    
+    .mg-page-header-section {
+        height: 350px;
+    }
+    /***********************/
+    /*
+    *Grid filter section
+    */
+    .mg-select-range {
+        margin-right: 0;
+    }
+    .mg-select-range select.form-select {
+        padding: 8px;
+        font-size: 10px;
+    }
+    .mg-range-slide span {
+        font-size: 10px;
+    }
+    .mg-range-bar {
+        padding: 15px 10px;
+    }
+    .mg-range-price  span.mg-rp-heading {
+        font-size: 10px;
+    }
+    .mg-range-price span {
+        font-size: 10px;
+    }
+    /***************************/
+    
+    
+    /*
+    *Feature section 2
+    */
+    .mg-feature-section-style2 .mg-feature-service:nth-child(2n) .card::after {
+        display: none;
+    }
+    .mg-toprated-grid2 .mg-toprated-grid {
+        padding: 10px 0;
+    }
+    .mg-toprated-grid2 .mg-toprated-thumb-img {
+        width: 75px;
+        margin-left: 10px;
+    }
+    .mg-toprated-text {
+        margin-left: 10px;
+    }
+    .mg-toprated-heading h5 {
+        font-size: 24px;
+    }
+    .mg-category-heading h5 {
+        font-size: 24px;
+    }
+    .mg-category {
+        padding: 0 5px;
+    }
+    .mg-category ul.list-group li.list-group-item {
+        padding: 16px 0;
+        font-size: 13px;
+    }
+    /***********************/
+    /**********************************/
+            /*
+            *Single-product page
+            */
+    /*
+    *product details section
+    */
+    .mg-product-details-box .mg-product-heading {
+        font-size: 16px;
+    }
+    .mg-product-rating .mg-rating {
+        margin-bottom: 5px;
+    }
+    .mg-price-tax-box span {
+        font-size: 12px;
+        margin-right: 4px;
+    }
+    .mg-price-tax-box .mg-tax-rate span {
+        font-size: 10px;
+    }
+    .mg-add-reviews a {
+        font-size: 10px;
+    }
+    .mg-discount-heading span {
+        font-size: 14px;
+    }
+    .mg-product-details-box {
+        padding: 0 10px 5px;
+    }
+    .mg-product-details-list ul li::marker {
+        font-size: 120%;
+    }
+    .mg-product-details-list ul li {
+        font-size: 10px;
+    }
+    .mg-option-info {
+        width: 100px;
+    }
+    .mg-selection label.form-check-label {
+        width: 45px;
+    }
+    .mg-product-slider {
+        padding-right: 0;
+    }
+    .mg-feature-info-img img {
+        width: 16px;
+    }
+    .mg-feature-info-text span {
+        font-size: 9px;
+    }
+    .mg-option-lable1 {
+        display: grid;
+    }
+    .mg-option-lable1 .mg-feature {
+        margin-left: 0;
+        margin-top: 14px;
+    }
+    /***************************/
+    /*
+    *Description  tab section
+    */
+    .mg-reviewer-img {
+        width: 90px;
+    }
+    .mg-description-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        padding: 10px 30px;
+    }
+    /*********************/
+    /********************************/
+    
+            /*
+            *about us page
+            */
+   /*
+    *pahe header section
+    */
+    .mg-page-header-section2 .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+    .mg-page-header-section2 {
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    /******************************/   
+    /*
+    *about us with image section
+    */
+    .mg-about-small-image2 {
+        margin-top: 0;
+    }
+    /*********************/
+    
+    /*
+    *video section
+    */
+    .mg-video-bg-img {
+        padding: 100px 0;
+    }
+    .mg-video-img-overtext {
+        width: 80%;
+    }
+    /***************/
+    
+    /*
+    *our team section
+    */
+    .mg-team-info h5 {
+        font-size: 14px;
+    }
+    .mg-team-social-link ul li img {
+        width: 35px;
+    }
+    /******************/
+    
+    /*
+    *Testimonial section
+    */
+    .mg-testimonial-image img {
+        width: 20px;
+    }
+    .mg-testimonial-text p {
+        font-size: 10px;
+    }
+    .mg-customer-img img {
+        width: 50px;
+    }
+    .mg-customer-name {
+        font-size: 10px;
+    }
+    /*******************/
+    /********************************/
+    
+        /*
+        *404 page style
+        */
+    
+    /*
+    *error section
+    */
+    .mg-error-content {
+        width: 80%;
+    }
+    .mg-error-content h5 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .mg-search-box .mg-search-filed input {
+        padding: 10px;
+    }
+    .mg-search-box span {
+        font-size: 16px;
+    }
+    .mg-error-content p {
+        font-size: 12px;
+    }
+    /******************/
+    /**************************/
+            /*
+            *blogs page
+            */
+    /*
+    *blogs page header
+    */
+    .mg-page-header-section3 {
+        height: 350px;
+    }
+    /*****************/
+    /*
+    *blogs grid section
+    */
+    .mg-blogs-grid-box .mg-img-bg-text {
+        padding: 30px 30px;
+    }
+    .mg-blogs-grid-box .mg-img-bg-text h6 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .mg-blogs-grid-box .mg-img-bg-text  a {
+        font-size: 10px;
+        padding: 8px 25px;
+    }
+    /******************/
+            /*
+            *single blog page
+            */
+            
+    /*
+    *blog page header section
+    */
+    .mg-page-header-style {
+        height: 300px;
+    }
+    /*****************************/
+     /*
+     *tag and social link section
+     */
+     .mg-tag-box {
+        padding: 9px 9px;
+    }
+    .mg-tag-box a {
+        font-size: 12px;
+    }
+    /********************/
+    /*
+    *comment section
+    */
+    .mg-comment-user-image img {
+        width: 108px;
+        height: 108px;
+    }
+    .mg-comment-info {
+        padding: 23px 30px;
+    }
+    .mg-commnet-para p {
+        font-size: 10px;
+    }
+    .mg-comment-section {
+        margin-bottom: 30px;
+    }
+    /*********************/
+    /****************************/
+    
+            /*
+            *my order page
+            */
+    
+     /*
+     *my order section
+     */
+    .mg-my-order-inner .mg-cpd-qty a {
+        font-size: 12px;
+    }
+    .mg-product-delivery-date h5 {
+        font-size: 12px;
+    }
+    .mg-product-delivery-date span {
+        font-size: 11px;
+    }
+    /*******************/
+    /*****************************/
+            /*
+            *my profile page
+            */
+            
+    /*
+    *profile section
+    */
+    .mg-my-profile {
+        padding: 50px 50px;
+    }
+    .mg-my-profile-details h5 {
+        font-size: 38px;
+    }
+    .mg-my-profile-details a {
+        font-size: 18px;
+    }
+    /******************/
+            /*
+            *thank you page
+            */
+            
+    /*
+    *thanku page section
+    */
+    .mg-thanku-content span {
+        font-size: 28px;
+    }
+    .mg-thanku-content-vertical-list {
+        margin-top: 50px;
+    }
+    /**********/
+              /*
+              *contact us page
+              */
+    /*
+    *contact us section
+    */
+    .mg-contact-info-heading h5 {
+        font-size: 16px;
+    }
+    .mg-git-form-heading h5 {
+        font-size: 16px;
+    }
+    /************/
+    /****************/
+                /*
+               *List view page
+               */
+               
+    /*
+    *list view section
+    */
+    .mg-lvc-heading a h5 {
+        font-size: 15px;
+    }
+    .mg-list-view-content {
+        margin-top: 12px;
+    }
+    /***************/
+    /********************/
+            /*
+            *home 2 page style
+            */
+    /*
+    *home header section
+    */
+    .mg-home2-header-outer .mg-burger-menu-icon span {
+        background-color: #fff;
+    }
+    
+    /*
+    *home 2 tab section
+    */
+    .mg-section-heading {
+        text-align: center !important;
+    }
+    .mg-home2-tab-section .mg-cart-box {
+        padding: 6px;
+    }
+    /****************/
+    /*
+    *home 2 top products section
+    */
+    .mg-tp-heading h5 {
+        font-size: 18px;
+    }
+    .mg-tp-para p {
+        font-size: 10px;
+    }
+    .mg-tp-btn a.btn.btn-lg {
+        font-size: 12px;
+    }
+    /*********************/
+    /*
+    *Background image with text and product list section
+    */
+    .mg-product-list-main {
+        margin-top: 25px;
+    }
+    .mg-home2-product-list-section .mg-product-list-content h5 {
+        font-size: 24px;
+        margin-bottom: 2px;
+    }
+    
+    .mg-home2-product-list-section .mg-pricing {
+        font-size: 20px;
+    }
+    .mg-home2-product-list-section .mg-rating img {
+        width: 18px;
+    }
+    .mg-home2-product-list-section .mg-product-list-content {
+        margin-top: 8px;
+    }
+    /******************/
+    /*
+    *feature and image overlay section
+    */
+    .mg-home2-img-overlay {
+        margin-top: 40px;
+    }
+    /*******************/
+    /**************************/
+            /*
+            *Home 3 page
+            */
+    /*
+    *top rated product section
+    */
+    .mg-home2-toprated-section .mg-toprated-heading h5 {
+        font-size: 18px;
+    }
+    .mg-home2-toprated-section .mg-toprated-text a h6 {
+        font-size: 10px;
+    }
+    .mg-home2-toprated-section .mg-home2-toprated-section .mg-rating {
+        margin-bottom: 2px;
+    }
+    .mg-home2-toprated-section .mg-rating img {
+        width: 12px;
+    }
+    /****************/
+    /*
+    *Home 3 image with text overlay section
+    */
+    .mg-home3-overlay-heading {
+        width: 70%;
+    }
+    .mg-home3-overlay-section .mg-overlay-text.mg-home3-overlay-text h6 {
+        font-size: 12px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text a {
+        font-size: 12px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text {
+        padding: 12px;
+        align-items: start;
+    }
+    /*********************/
+    /*
+    *container fit background with image
+    */
+    .mg-cf-text.mg-left-aligment {
+        width: 50%;
+    }
+    .mg-cf-text  p {
+        margin-bottom: 30px;
+    }
+    .mg-home3-cf-bg-img-section .mg-cf-bg-img {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 767px){
+    /*
+    *Header filter section
+    */
+    .mg-category-filter .dropdown a.mg-dropdown-btn {
+        font-size: 16px;
+    }
+    .mg-category-filter .dropdown span {
+        margin-right: 30px;
+    }
+    .mg-category-filter .dropdown span {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .mg-contact-search-icon {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .mg-mobile-icons img {
+        width: 35px;
+        margin: 0 5px;
+    }
+    .mg-search-bar-dropdwon {
+        border: none;
+    }
+    
+    /**************************/
+    /*
+    * banner section
+    */
+    
+    .mg-slide {
+        height: 100vh;
+    }
+    .mg-slide-text {
+        width: 100%;
+    }
+    .container.mg-slider-text-box {
+        text-align: center;
+    }
+    .mg-slide-text h2 {
+        font-size: 56px;
+    }
+    .mg-slide-text > span {
+        font-size: 18px;
+    }
+    .mg-slide-text p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .mg-slide-text .mg-price {
+        font-size: 20px;
+    }
+    .mg-price span {
+        font-size: 30px;
+    }
+    .mg-slider-section .mg-slide a.mg-shop-btn {
+        padding: 12px 30px;
+    }
+    a.mg-shop-btn {
+        font-size: 16px;
+    }
+    a.mg-shop-btn {
+        padding: 10px 24px;
+    }
+    /*
+    *image with text overlay section
+    */
+    .mg-overlay-text h6 {
+        margin-bottom: 60px;
+    }
+    .mg-overlay-text h6 {
+        font-size: 26px;
+    }
+    /************************/
+    
+    /*
+    * Container fit silder section
+    */
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text {
+        width: 75%;
+        margin: auto;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide {
+        height: 100vh;
+        background-position: center;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text > span {
+        font-size: 14px;
+    }
+    .mg-rating span i {
+        font-size: 14px;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text h2 {
+        font-size: 28px;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-price {
+        font-size: 22px;
+        color: #505050;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-price span {
+        font-size: 24px;
+    }
+    a.mg-shop-btn {
+        padding: 6px 18px;
+    }
+    .mg-container-fit-slider .mg-slider-section ul.slick-dots {
+        justify-content: center;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide a.mg-shop-btn {
+        padding: 10px 26px;
+    }
+    .mg-container-fit-slider a.mg-shop-btn {
+        font-size: 14px;
+    }
+    /**************************************/
+    
+    /*
+    *Grid with small thumb and Text with background image section
+    */
+    .mg-toprated-text span {
+        font-size: 17px;
+    }
+    .mg-toprated-text a h6 {
+        font-size: 26px;
+        margin-bottom: 3px;
+    }
+    .mg-toprated-grid .mg-pricing {
+        font-size: 32px;
+    }
+    .mg-toprated-text {
+        margin-top: 14px;
+    }
+    /**********************************/
+    
+    /*
+    *Text with background image and carousel section
+    */
+    .mg-img-bg-text {
+        padding: 200px 40px;
+    }
+    .mg-img-bg-text h6 {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .mg-img-bg-text span {
+        font-size: 16px;
+    }
+    .mg-img-bg-text  a {
+        font-size: 16px;
+        padding: 18px 45px;
+    }
+    .mg-img-bg-text {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    /******************************************/
+    /*
+    * Footer section
+    */
+    
+    .mg-footer-bio {
+        text-align: center;
+        margin: auto;
+    }
+    .mg-newsletter-outer {
+        text-align: center;
+        margin: auto;
+    }
+    .mg-footer-link {
+        text-align: center;
+        margin-top: 18px;
+    }
+    /********************************************/
+    /*
+    *Helpers
+    */
+    
+    .mg-margin-tb {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    /*************************/
+    
+        /*
+        * Shop page style here
+        */
+    
+    /*
+    *Grid filter section
+    */
+    
+    .mg-range-heading {
+        width: 120px;
+    }
+    .mg-grid-icons img {
+        width: 32px;
+    }
+    .mg-range-price  span.mg-rp-heading {
+        font-size: 12px;
+    }
+    .mg-range-price span {
+        font-size: 12px;
+    }
+    /**************************/
+    
+    /*
+    *Category top rated products and text overlay section
+    */
+    .mg-toprated-grid2 .mg-toprated-text span {
+        font-size: 14px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text a h6 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .mg-toprated-grid2 .mg-toprated-grid .mg-pricing {
+        font-size: 18px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text {
+        margin-top: 0;
+    }
+    /*************************/
+    /************************************/
+            /*
+            *Single-product page
+            */
+    /*
+    *product details section
+    */
+    .mg-product-details-box {
+        margin-top: 20px;
+    }
+    .mg-product-details-box .mg-product-heading {
+        font-size: 20px;
+    }
+    .mg-add-reviews a {
+        font-size: 12px;
+    }
+    .mg-discount-heading span {
+        font-size: 16px;
+    }
+    .mg-price span {
+        font-size: 22px;
+        margin-right: 5px;
+    }
+    .mg-product-details-list ul li {
+        font-size: 12px;
+    }
+    .mg-option-lable1 {
+        display: flex;
+    }
+    .mg-option-lable1 .mg-feature {
+        margin-left: 110px;
+        margin-top: 0;
+    }
+    .mg-ad-cart-btn  a.mg-shop-btn {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .mg-additional-info {
+        margin-top: 15px;
+    }
+    /***********************/
+    
+    /*
+    *Description tab section
+    */
+    .mg-reviewer-img {
+        width: 70px;
+    }
+    /*******************/
+    /*****************************/
+            /*
+            *about us page
+            */
+            
+            
+    /*
+    *page header section
+    */
+    .mg-page-header-section2 .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+    .mg-page-header-section2 {
+        height: 250px;
+    }
+    /******************************/
+    /*
+    *about us with image section
+    */
+    .mg-about-text-inner h5 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .mg-about-text-inner p {
+        font-size: 10px;
+    }
+    .mg-about-text-inner a.mg-shop-btn.btn.btn-default {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    /********************/
+    
+    /*
+    *Video section
+    */
+    .mg-video-bg-img {
+        padding: 50px 0;
+    }
+    .mg-video-img-overtext h5 {
+        font-size: 20px;
+    }
+    .mg-video-play-btn img {
+        width: 50px;
+    }
+    .mg-video-img-overtext p {
+        font-size: 10px;
+    }
+    /******************/
+    /******************************/
+        /*
+        *404 page style
+        */
+    
+    /*
+    *error section
+    */
+    
+    .mg-error-content span {
+        font-size: 30px;
+    }
+    .mg-search-box span {
+        font-size: 16px;
+    }
+    .mg-error-content p {
+        font-size: 10px;
+    }
+    /*******************/
+    /******************************/
+            /*
+            *blogs page
+            */
+    
+    /*
+    *blogs page header
+    */
+    .mg-page-header-section3 {
+        height: 250px;
+    }
+    /***********************/
+    /********************************/
+            /*
+            *single blog page
+            */
+            
+    /*
+    *blog page header section
+    */
+    .mg-page-header-style {
+        height: 230px;
+        margin-bottom: 40px;
+    }
+    /*****************************/
+    /*
+    *single blog text section
+    */
+    .mg-highlihted-text span {
+        font-size: 15px;
+    }
+    .mg-blog-text-heading h5 {
+        font-size: 16px;
+    }
+    /********************/
+    /*
+    *tag and social link section
+    */
+    .mg-social-heading span {
+        font-size: 14px;
+    }
+    /******************/
+    /*
+    *comment section 
+    */
+    .mg-comment-user-personal-info span {
+        font-size: 18px;
+    }
+    .mg-comment-date span {
+        font-size: 13px;
+    }
+    .mg-comment-user-image img {
+        width: 95px;
+        height: 95px;
+    }
+    .mg-commnet-reply a {
+        font-size: 12px;
+    }
+    /********************/
+    /**************************/
+            /*
+            *my profile page
+            */
+            
+    /*
+    *profile section
+    */
+    .mg-my-profile-details h5 {
+        font-size: 26px;
+    }
+    .mg-my-profile-details a {
+        font-size: 16px;
+    }
+    /**********/
+    /****************/
+            /*
+            *thank you page
+            */
+            
+    /*
+    *thanku page section
+    */
+    .mg-thanku-content span {
+        font-size: 22px;
+    }
+    .mg-thnaku-page-section {
+        padding: 60px 18px;
+    }
+    .mg-thanku-content-vertical-list {
+        margin-top: 50px;
+    }
+    /***************/
+             /*
+              *contact us page
+              */
+    /*
+    *contact us section
+    */
+    .mg-contact-info-heading h5 {
+        font-size: 24px;
+    }
+    .mg-git-form-heading h5 {
+        font-size: 24px;
+    }
+    .mg-contact-info-inner {
+        padding-right: 0;
+        border-right: none;
+    }
+    /***************/
+    /********************/
+               /*
+               *List view page
+               */
+               
+    /*
+    *list view section
+    */
+    .mg-lvc-heading a h5 {
+        font-size: 24px;
+    }
+    .mg-list-view-content {
+        margin-top: 40px;
+    }
+    /**************/
+    /*****************/
+            /*
+            *checkout page
+            */
+            
+    /*
+    *checkout page section
+    */
+    .mg-checkout-tab .mg-tabs-box .nav-tabs .nav-link.active {
+        background: #000;
+        color: #fff;
+        padding: 10px;
+    }
+    .mg-checkout-tab .mg-tabs-box .nav-tabs .nav-link {
+        background-color: #fff;
+        padding: 10px;
+    } 
+    .mg-co-check p {
+        font-size: 10px;
+    }
+    .mg-co-radio p {
+        font-size: 10px;
+    }
+    .mg-co-order-details-heading h5 {
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .mg-co-form-heading h5 {
+        font-size: 22px;
+    }
+    .mg-co-add-more-info a {
+        font-size: 20px;
+    }
+    /***********/
+    /******************/
+    
+            /*
+            *home 2 page style
+            */
+    /*
+    *home 2 tab section
+    */
+    .mg-section-heading {
+        text-align: center !important;
+    }
+    /****************/
+    /*
+    *Background images with text and products list
+    */
+    .mg-product-list-main {
+        margin-top: 45px;
+    }
+    /************/
+    /*
+    *home 2 banner section
+    */
+    .mg-home2-page-slider .mg-slide-text p {
+        margin-bottom: 44px;
+        font-size: 12px;
+    }
+    .mg-home2-page-slider .mg-slider-section .mg-slide a.mg-shop-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    /***************/
+    /*
+    *home 2 top product
+    */
+    .mg-top-products-box {
+        border-left: none;
+    }
+    .mg-tp-heading {
+        text-align: center;
+    }
+    .mg-tp-para {
+        text-align: center;
+    }
+    .mg-tp-btn {
+        text-align: center;
+    }
+    /****************/
+    /*
+    *container fit background image with text section
+    */
+    .mg-cf-bg-img {
+        height: 280px;
+    }
+    .mg-cf-text h2 {
+        font-size: 18px;
+    }
+    .mg-cf-text.mg-left-aligment {
+        width: 50%;
+    }
+    /*************/
+    /*
+    *background image with text and product list
+    */
+    .mg-img-product-list-section .mg-cf-bg-img {
+        height: 280px;
+    }
+    /*************/
+    /*
+    *home 2 banner section
+    */
+    .mg-slider-section-home2 .mg-slide-text {
+        width: 100%;
+    }
+    .mg-home2-page-slider .mg-slider-section .mg-slide a.mg-shop-btn {
+        font-size: 12px;
+    }
+    .mg-slider-section-home2 .mg-slide-text h2 {
+        font-size: 30px;
+    }
+    .mg-slider-section-home2 .mg-slide-text p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .mg-slider-section-home2 .mg-slide a.mg-shop-btn {
+    font-size: 12px;
+}
+    /******************/
+    /*
+    *footer section
+    */
+    .mg-home2-footer-section .mg-payment-option-img {
+        text-align: center;
+    }
+    /************/
+            /*
+            *Home 3 page
+            */
+    /*
+    *home 3 banner section
+    */
+    .mg-home3-slider-section .mg-slide {
+        background-position: center;
+    }
+    /******************/
+    /*
+    *Header section
+    */
+    .mg-home3-header-outer .mg-contact-search-icon {
+        display: none;
+    }
+    .mg-home3-slider-section .mg-slide-text h2 {
+        font-size: 32px;
+    }
+    .mg-home3-slider-section .mg-slide-text p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .mg-home3-slider-section .mg-slide-text .mg-price {
+        font-size: 16px;
+    }
+    .mg-home3-slider-section a.mg-shop-btn {
+        font-size: 12px;
+    }
+    .mg-home3-header-outer .header-logo {
+        text-align: end;
+    }
+    /************************/
+    /*
+    *Home 3 image with text overlay section
+    */
+    .mg-home3-overlay-heading {
+        width: 100%;
+    }
+    .mg-home3-overlay-section .mg-overlay-text.mg-home3-overlay-text h6 {
+        font-size: 16px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text a {
+        font-size: 14px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text {
+        margin-top: 0px;
+    }
+    /************************/
+    /*
+    *container fit background image with text
+    */
+    .mg-home3-cf-bg-img-section .mg-cf-bg-img {
+        height: 290px;
+    }
+    .mg-home3-cf-bg-img-section .mg-cf-text h2 {
+        margin-bottom: 0;
+    }
+    .mg-home3-cf-bg-img-section .mg-cf-text  p {
+        margin-bottom: 12px;
+    }
+    .mg-home3-cf-bg-img-section .mg-cf-text a.btn.btn-default {
+        font-size: 10px;
+        padding: 8px 25px;
+    }
+    .mg-home3-cf-bg-img-section .mg-cf-text.mg-left-aligment {
+        width: 70%;
+    }
+    /************************/
+    /*
+    *top rated product section
+    */
+    .mg-home3-toprated-section .mg-rating img {
+        width: 20px;
+    }
+    .mg-home3-toprated-section .mg-toprated-text a h6 {
+        font-size: 22px;
+    }
+    .mg-home3-toprated-section .mg-toprated-grid .mg-pricing {
+        font-size: 26px;
+    }
+    .mg-home3-toprated-section .mg-toprated-heading h5 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    /******************/
+    /*
+    *grid with small thumb and text with background image
+    */
+    .mg-toprated-section.mg-home3-toprated-section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .mg-home3-small-grid {
+        padding-bottom: 30px;
+    }
+    /************/
+    /*
+    *home 3 social media section
+    */
+    .mg-home3-social-media-section a.mg-shop-btn {
+        font-size: 12px;
+    }
+    /*******************/
+    /*
+    *Home 3 footer section
+    */
+    .mg-home3-footer-section .mg-copy-right-text {
+        text-align: center;
+    }
+    /*******************/
+}
+@media screen and (max-width: 575px){
+    /*
+    * Header filter section
+    */
+    .mg-category-filter .dropdown a.mg-dropdown-btn {
+        font-size: 12px;
+    }
+    .mg-category-filter .dropdown span {
+        font-size: 12px;
+    }
+    
+    .mg-header-filter-section {
+        padding: 15px 0;
+    }
+    /************************/
+    /*
+    *slider section
+    */
+    .mg-slide-text h2 {
+        font-size: 32px;
+    }
+    .mg-slide-text > span {
+        font-size: 14px;
+    }
+    .mg-slide-text p {
+        font-size: 14px;
+    }
+    .mg-slide-text .mg-price {
+        font-size: 14px;
+    }
+    .mg-price span {
+        font-size: 20px;
+    }
+    .mg-slider-section .mg-slide a.mg-shop-btn {
+        padding: 8px 24px;
+    }
+    a.mg-shop-btn {
+        font-size: 14px;
+    }
+    /********************************/
+    /*
+    *Features section
+    */
+    
+    .mg-feature-box .card .card-body {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    .mg-feature-box img {
+        width: 48px;
+        margin-bottom: 20px;
+    }
+    .mg-feature-box .card-title {
+        font-size: 24px;
+    }
+    .mg-feature-box .card-text {
+        font-size: 20px;
+    }
+    /************************************/
+    
+    /*
+    * Image with overlay section
+    */
+    .mg-img-box {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    /**************************/
+    
+    /*
+    *Tab section
+    */
+    
+    .mg-section-heading h5 {
+        font-size: 28px;
+    }
+    .mg-section-heading span {
+        font-size: 12px;
+    }
+    .mg-tabs-box .nav-tabs .nav-link {
+        padding: 7px 23px;
+    }
+    .mg-tabs-box .nav-tabs .nav-link.active {
+        padding: 7px 23px;
+    }
+    .mg-tab-text .mg-small-heading a {
+        font-size: 11px;
+    }
+    .mg-tab-text h5 {
+        font-size: 12px;
+    }
+    .mg-pricing {
+        font-size: 16px;
+    }
+    .mg-pricing span {
+        font-size: 14px;
+    }
+    .mg-wishlist-icon img {
+        width: 18px;
+    }
+    /******************************/
+    
+    /*
+    *container fit banner section
+    */
+    
+    .mg-container-fit-slider a.mg-shop-btn {
+        font-size: 12px;
+    }
+    /******************************/
+    
+    /*
+    * carousel and text with image background section 
+    */
+    
+    .mg-custome-section .mg-tab-text h5 {
+        font-size: 12px;
+    }
+    .mg-custome-section .mg-tab-text .mg-small-heading a {
+        font-size: 12px;
+    }
+    .mg-custome-section .mg-wishlist-icon img {
+        width: 20px;
+    }
+    .mg-custome-section .mg-pricing {
+        font-size: 17px;
+    }
+    .mg-custome-section .mg-pricing span {
+        font-size: 15px;
+    }
+    .mg-img-bg-text  a {
+        font-size: 14px;
+        padding: 13px 30px;
+    }
+    /******************************/
+    
+    /*
+    * top rateted product
+    */
+    
+    .mg-toprated-text span {
+        font-size: 14px;
+    }
+    .mg-toprated-text a h6 {
+        font-size: 22px;
+    }
+    .mg-toprated-grid .mg-pricing {
+        font-size: 26px;
+    }
+    /*******************************/
+    
+    /*
+    *Helpers
+    */
+    
+    .mg-padding-lr {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /************************/
+    /*
+    *copy right section
+    */
+    .mg-copy-right-text {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .mg-payment-option-img {
+        text-align: center;
+    }
+    /***********************/
+    
+        /*
+        * Shop page style here
+        */
+    
+     /*
+     * Page Header section
+     */
+     .mg-page-header-section {
+        height: 230px;
+    }
+    .mg-page-header-section .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+    .mg-about-text-outer {
+        margin-top: 24px;
+    }
+     /***********************/
+     
+    /*
+    *Grid filter section
+    */
+    
+    .mg-select-range {
+        margin-bottom: 12px;
+    }
+    .mg-grid-filter-inner {
+        margin-bottom: 12px;
+    }
+    .mg-range-bar {
+        width: 415px;
+    }
+    .mg-range-slide span {
+        font-size: 14px;
+    }
+    /*********************/
+     
+     /*
+     *Category top rated products and text overlay section
+     */
+     .mg-toprated-grid2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .mg-toprated-grid2 .mg-toprated-thumb-img {
+        width: 130px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text span {
+        font-size: 17px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text a h6 {
+        font-size: 22px;
+        margin-bottom: 3px;
+    }
+    .mg-toprated-grid2 .mg-toprated-grid .mg-pricing {
+        font-size: 25px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text {
+        margin-top: 12px;
+        margin-left: 30px;
+    }
+    .mg-feature-section-style2 .card::after {
+        display:none;
+    }
+    .mg-custom-section2 {
+        padding-top: 0;
+    }
+    .mg-custom-section2 .mg-category {
+        background-color: #eee;
+        padding: 40px 16px 40px 16px;
+        margin-top: 20px;
+    }
+    .mg-custom-section2 .mg-category ul.list-group li.list-group-item {
+        background-color: #eee;
+    }
+    .mg-toprated-grid2 .mg-toprated-text a h6 {
+        font-size: 16px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text span {
+        font-size: 13px;
+    }
+    .mg-toprated-grid2 .mg-toprated-grid .mg-pricing {
+        font-size: 20px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text {
+        margin-top: 6px;
+    }
+     /*************************************/
+     /************************************************/
+            /*
+            *Single-product page
+            */
+            
+    /*
+    *product details section
+    */
+    .mg-ad-cart-btn  a.mg-shop-btn {
+        padding: 13px 20px;
+        font-size: 12px;
+    }
+    /**************************/   
+    
+    /*
+    *Description tab section
+    */
+    .mg-description-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        padding: 7px 23px;
+    }
+    .mg-feature-info-box {
+        margin-bottom: 10px;
+    }
+    /***********************/
+    /*******************************/
+        /*
+        *about us page
+        */
+    
+    /*
+    *page header section
+    */
+    .mg-page-header-section2 .mg-page-header-heading h3 {
+        font-size: 24px;
+    }
+    .mg-page-header-section2 {
+        height: 190px;
+    }
+    /******************************/
+    
+        /*
+        *404 page style
+        */
+    
+    /*
+    *error section
+    */
+    .mg-erro-page-section {
+        padding: 100px 50px;
+    }
+    .mg-error-content {
+        width: 100%;
+    }
+    .mg-error-content h5 {
+        font-size: 42px;
+    }
+    .mg-search-box span {
+        font-size: 16px;
+    }
+    .mg-error-content span {
+        font-size: 20px;
+    }
+    .mg-search-box span {
+    font-size: 12px;
+    }
+    .mg-search-box .mg-search-filed button {
+        padding: 8px 10px;
+    }
+    .mg-error-content p {
+        margin-top: 15px;
+    }
+    .mg-search-box .mg-search-filed button {
+        padding: 8px 20px;
+    }
+    .mg-error-content a {
+        font-size: 20px;
+    }
+    /**********************/
+    /******************************/
+            /*
+            *blogs page
+            */
+    
+    /*
+    *blogs page header
+    */
+    .mg-page-header-section3 {
+        height: 230px;
+    }
+    .mg-page-header-section3 .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+    .mg-blogs-grid-box {
+        width: 50%;
+        margin: auto;
+    }
+    /********************/
+    /********************************/
+            /*
+            *single blog page
+            */
+            
+    /*
+    *tag and social link section
+    */
+    .mg-social-link-section {
+        justify-content: center;
+    }
+    /**********************/
+    /*
+    *comment section
+    */
+    .mg-comment-user-image img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    /********************/
+    /*
+    *form single blog
+    */
+    .mg-form-input-field {
+        margin-bottom: 14px;
+    }
+    /***************/
+    /***************************/
+    
+        /*
+        *my account page
+        */
+        
+    /*
+    *my account page header
+    */
+    .mg-page-header-section5 .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+    /******************/
+    /**************************/
+    
+            /*
+            *Cart page
+            */
+    
+    /*
+    *cart page header
+    */
+    .mg-page-header-section6 .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+    /*********************/
+    
+              /*
+               *faq page
+               */
+              
+    /*
+    *faq section
+    */
+    .mg-faq-inner button.accordion-button {
+        font-size: 18px;
+    }
+    /*****************/
+    /**********************/
+            /*
+            *my profile page
+            */
+            
+    /*
+    *profile section
+    */
+    .mg-my-profile {
+        padding: 50px 34px;
+    }
+    .mg-my-profile-details h5 {
+        font-size: 30px;
+    }
+    /*****************/
+    /************************/
+            /*
+            *thank you page
+            */
+            
+    /*
+    *thanku page section
+    */
+    .mg-thanku-content {
+        width: 90%;
+    }
+    /***************/
+    /********************/
+            /*
+            *home 2 page
+            */
+    /*
+    *background image with and product list
+    */
+    .mg-img-product-list-section .mg-product-list-content h5 {
+        font-size: 26px;
+    }
+    .mg-img-product-list-section .mg-pricing {
+        font-size: 24px;
+    }
+    .mg-img-product-list-section .mg-rating img {
+        width: 20px;
+    }
+    .mg-img-product-list-section .mg-product-list-content {
+        margin-top: 36px;
+    }
+    /********************/
+    /*
+    *home2 banner section
+    */
+    .mg-slider-section-home2 .mg-slide-text > span {
+        font-size: 14px;
+    }
+    .mg-slider-section-home2 .mg-slide-text h2 {
+        font-size: 32px;
+    }
+    .mg-slider-section-home2 .mg-slide-text p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .mg-slider-section-home2 .mg-slide {
+        background-position: center;
+    }
+    /********************/
+    /*
+    *feature and image overlay section 
+    */
+    .mg-home2-feature-section-heading {
+        text-align: center;
+    }
+    .mg-home2-fetaure-section .mg-feature-box {
+        width: 60%;
+        margin: auto;
+    }
+    .mg-feature-box .card-body {
+        text-align: center !important;
+    }
+   /************************/
+   /*
+   *home 2 top product section
+   */
+    .mg-tp-product-grid-main {
+        margin: 0px 0px;
+    }
+    /*******************/
+            /*
+            *Home 3 page
+            */
+    /*
+    *Home3 feature section
+    */
+    .mg-home3-feature-section .mg-feature-box {
+        width: 100%;
+    }
+    .mg-home3-feature-section .mg-feature-box .card .card-body {
+        padding: 0;
+        text-align: center !important;
+    }
+    /******************/
+    /*
+    *home 3 image with text overlay section
+    */
+    .mg-home3-overlay-section .mg-overlay-text span {
+        font-size: 12px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text h6 {
+        font-size: 26px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text.mg-home3-overlay-text h6 {
+        font-size: 26px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text span {
+        font-size: 14px;
+    }
+    .mg-home3-overlay-section .mg-overlay-text a {
+        font-size: 16px;
+    }
+    .mg-img-overlay-section.mg-home3-overlay-section .mg-img-box img {
+        height: auto;
+    }
+    /******************/
+    /*
+    *Background image with text overlay section 2
+    */
+    .mg-home3-overlay-section .mg-padding-lr {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /*************/
+    /*
+    *contact us page
+    */
+    .mg-page-header-style .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 540px){
+    
+    /*
+    * image with overlay section
+    */
+    
+    .mg-overlay-text h6 {
+        margin-bottom: 30px;
+    }
+    
+    /********************/
+    
+    /*
+    * text with background and carousel section
+    */
+    
+    .mg-custome-section .mg-tab-text h5 {
+        font-size: 11px;
+    }
+    
+    /******************************/
+    
+    /*
+    *top rated product section
+    */
+    
+    .mg-toprated-text a h6 {
+        font-size: 20px;
+    }
+    .mg-toprated-grid .mg-pricing {
+        font-size: 22px;
+    }
+    /*********************************/
+            /*
+            *Single-product page
+            */
+            
+    /*
+    *product details section
+    */
+    .mg-option-lable1 .mg-feature {
+        margin-left: 90px;
+    }
+}
+@media screen and (max-width: 522px){
+    /*
+    * Shop page style here
+    */
+    
+    /*
+    *Grid filter section
+    */
+    .mg-range-bar {
+        width: 378px;
+    }
+    /************/
+    
+    /*
+     *Category top rated products and text overlay section
+     */
+    
+    .mg-toprated-grid2 .mg-toprated-thumb-img {
+        width: 120px;
+    }
+    /**********************/
+    /**********************************/
+            /*
+            *Single-product page
+            */
+            
+    /*
+    *product details section
+    */
+    .mg-option-lable1 .mg-feature {
+        margin-left: 70px;
+    }
+            /*
+            *about us page
+            */
+            
+    /*
+    *about us with image section
+    */
+    
+    .mg-about-text-inner span {
+        font-size: 10px
+    }
+    .mg-about-text-inner h5 {
+        font-size: 12px;
+    }
+    .mg-about-text-inner p {
+        font-size: 8px;
+        margin-bottom: 6px;
+    }
+    .mg-about-text-inner a.mg-shop-btn.btn.btn-default {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+    /********************/
+    
+    /*
+    *our team section
+    */
+    
+    .mg-team-section .mg-section-heading span {
+        font-size: 11px;
+    }
+    .mg-section-heading h5 {
+        font-size: 22px;
+    }
+    .mg-team-info h5 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 498px){
+    
+    /*
+    *features section
+    */
+    .mg-feature-box .card .card-body {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    /************************/
+        /*
+        *Single-product page
+        */
+            
+    /*
+    *product details section
+    */
+    
+    .mg-option-lable1 {
+        display: grid;
+    }
+    .mg-option-lable1 .mg-feature {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    /********************/
+    
+    /*
+    *Description tab section
+    */
+    .mg-review-text-box p {
+        font-size: 10px;
+    }
+    .mg-reviews-box {
+        padding: 24px 15px;
+    }
+    .mg-reviewer-img {
+        width: 60px;
+    }
+    /***************************/
+        /*
+        *about us page
+        */
+    
+    /*
+    *page header section
+    */
+    .mg-page-header-section2 .mg-page-header-heading h3 {
+        font-size: 22px;
+    }
+    .mg-page-header-section2 {
+        height: 150px;
+    }
+    /******************************/
+                /*
+                *Home 3 page
+                */
+    /*
+    *Home 3 top rated products section
+    */
+    .mg-home3-toprated-section .mg-rating img {
+        width: 16px;
+    }
+    .mg-home3-toprated-section .mg-toprated-text a h6 {
+        font-size: 18px;
+    }
+    .mg-home3-toprated-section .mg-toprated-grid .mg-pricing {
+        font-size: 20px;
+    }
+    .mg-home3-toprated-section .mg-toprated-text {
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 475px){
+    
+        /*
+        * Shop page style here
+        */
+    
+    /*
+    *Grid filter section
+    */
+    
+    .mg-range-slide span {
+        font-size: 12px;
+    }
+    .mg-range-heading {
+        width: 120px;
+    }
+    .mg-grid-icons img {
+        margin-right: 0;
+    }
+    /****************/
+            /*
+            *blogs page
+            */
+    
+    /*
+    *blogs page header
+    */
+    .mg-blogs-grid-box {
+        width: 60%;
+        margin: auto;
+    }
+    /***************/
+}
+
+@media screen and (max-width: 470px){
+    /*
+    * Feature section
+    */
+    .mg-feature-box .card .card-body {
+        padding-top: 55px;
+        padding-bottom: 55px;
+        padding-right: 55px;
+        padding-left: 55px;
+    }
+    /****************************/
+    
+    /*
+    * image with text overlay section
+    */
+    .mg-overlay-text h6 {
+        font-size: 20px;
+    }
+    .mg-overlay-text h6 {
+        margin-bottom: 15px;
+    }
+    .mg-overlay-text a {
+        font-size: 10px;
+        padding: 7px 23px;
+    }
+    /*********************************/
+    
+    /*
+    *top rated with text with image background section
+    */
+    .mg-toprated-text a h6 {
+        font-size: 16px;
+    }
+    .mg-toprated-grid .mg-pricing {
+        font-size: 16px;
+    }
+    .mg-img-bg-text  a {
+        font-size: 11px;
+        padding: 13px 30px;
+    }
+    /*********************/
+    
+    /*
+    *text with backhground and carousel section
+    */
+    .mg-custome-section .mg-tab-text h5 {
+        font-size: 10px;
+    }
+    /*********************************/
+    
+        /*
+        * Shop page style here
+        */
+     
+     /*
+     *Category top rated products and text overlay section
+     */
+     .mg-toprated-grid2 .mg-toprated-thumb-img {
+        width: 110px;
+    }
+     .mg-toprated-grid2 .mg-toprated-text span {
+        font-size: 13px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text {
+        margin-top: 12px;
+        margin-left: 40px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text a h6 {
+        font-size: 16px;
+    }
+    .mg-toprated-grid2 .mg-toprated-grid .mg-pricing {
+        font-size: 18px;
+    }
+    /*****************************/
+            /*
+            *my profile page
+            */
+            
+    /*
+    *profile section
+    */
+    .mg-my-profile {
+        padding: 50px 34px;
+    }
+    .mg-my-profile-details h5 {
+        font-size: 20px;
+    }
+    /*****************/
+    /************************/
+            /*
+            *thank you page
+            */
+            
+    /*
+    *thanku page section
+    */
+    .mg-thanku-heading {
+        font-size: 18px;
+    }
+    /*****************/
+    /*******************/
+            /*
+            *checkout page
+            */
+            
+    /*
+    *checkout page section
+    */
+    .mg-checkout-tab .mg-tabs-box .nav-tabs .nav-link.active {
+        background: #000;
+        color: #fff;
+        padding: 7px;
+        font-size: 8px;
+    }
+    .mg-checkout-tab .mg-tabs-box .nav-tabs .nav-link {
+        background-color: #fff;
+        padding: 7px;
+        font-size: 8px;
+    }
+    /******************/
+            /*
+            *Home 3 page
+            */
+    /*
+    *Home 3 top rated product section
+    */
+    .mg-home3-toprated-section .mg-toprated-text a h6 {
+        font-size: 16px;
+    }
+    /******************/
+    /*
+    *Home 3 tab section
+    */
+    .mg-home3-tab-section .mg-tabs-box .nav-tabs .nav-link.active {
+        font-size: 12px;
+    }
+    .mg-home3-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 415px){
+    /*
+    *Features section
+    */
+    
+    .mg-feature-box img {
+        width: 35px;
+    }
+    .mg-feature-box .card-title {
+        font-size: 16px;
+    }
+    .mg-feature-box .card-text {
+        font-size: 12px;
+    }
+    .mg-feature-box .card .card-body {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    /****************************/
+    
+    /*
+    *Image with text overlay section
+    */
+    .mg-overlay-text h6 {
+        font-size: 14px;
+    }
+    .mg-overlay-text span {
+        font-size: 10px;
+    }
+    .mg-overlay-text a {
+        padding: 7px 16px;
+    }
+    /***************************/
+    /*
+    *Text with background image and carousel
+    */
+    .mg-custome-section .mg-wishlist-icon img {
+        width: 16px;
+    }
+    .mg-custome-section .mg-tab-text .mg-small-heading a {
+        font-size: 10px;
+    }
+    .mg-custome-section .mg-pricing {
+        font-size: 12px;
+    }
+    /****************************************/
+    
+    /*
+    *top rated section
+    */
+    .mg-toprated-text {
+        margin-top: 0px;
+    }
+    /**********************************/
+    
+        /*
+        *Single-product page
+        */
+    
+    /*
+    *description tab section
+    */
+    .mg-description-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        padding: 7px 15px;
+        font-size: 10px;
+    }
+    .mg-reviewer-img {
+        width: 45px;
+    }
+    /********************/
+    /*******************************/
+            /*
+            *blogs page
+            */
+    
+    /*
+    *blogs page header
+    */
+    .mg-blogs-grid-box {
+        width: 70%;
+        margin: auto;
+    }
+    /***************/
+            /*
+            *Home 2 page 
+            */
+    /*
+    *background image with text and product list
+    */
+    .mg-img-product-list-section .mg-product-list-content h5 {
+        font-size: 18px;
+    }
+    .mg-img-product-list-section .mg-product-list-content {
+        margin-top: 6px;
+    }
+    /******************/
+    /*
+    *container fit background inmage section
+    */
+    .mg-cf-text.mg-left-aligment {
+        width: 80%;
+    }
+    /********************/
+    /*
+    *home 2 tab section
+    */
+    .mg-home2-tab-section .mg-tabs-box .nav-tabs .nav-link.active {
+        font-size: 12px;
+    }
+    .mg-home2-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        font-size: 12px;
+    }
+    /******************/
+    /*
+    *
+    */
+}
+@media screen and (max-width: 389px){
+    .mg-range-slide span {
+        font-size: 10px;
+    }
+    
+        /*
+        * Shop page style here
+        */
+    
+    /*
+    *Page header section
+    */
+    .mg-page-header-section {
+        height: 200px;
+    }
+    /************************/
+    
+    /*
+     *Category top rated products and text overlay section
+     */
+    .mg-toprated-grid2 .mg-toprated-text a h6 {
+        font-size: 16px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text span {
+        font-size: 14px;
+    }
+    .mg-toprated-grid2 .mg-toprated-thumb-img {
+        width: 100px;
+    }
+    .mg-toprated-grid2 .mg-toprated-text {
+        margin-top: 0;
+    }
+    /****************************/
+        /*
+        *my account page
+        */
+        
+    /*
+    *my account page header
+    */
+    .mg-page-header-section5 .mg-page-header-heading h3 {
+        font-size: 20px;
+    }
+    /****************/
+    /***************************/
+            /*
+            *Cart page
+            */
+    
+    /*
+    *cart page header
+    */
+    .mg-page-header-section6 .mg-page-header-heading h3 {
+        font-size: 30px;
+    }
+    /*********************/
+            /*
+            *my profile page
+            */
+            
+    /*
+    *profile section
+    */
+    .mg-my-profile {
+        padding: 50px 20px;
+    }
+    .mg-my-profile-details h5 {
+        font-size: 18px;
+    }
+    .mg-my-profile-details a {
+        font-size: 12px;
+    }
+    /*****************/
+    /************************/
+            /*
+            *Home 3 page
+            */
+    /*
+    *Home 3 top rated product section
+    */
+    .mg-home3-toprated-section .mg-toprated-text a h6 {
+        font-size: 12px;
+    }
+    .mg-home3-toprated-section .mg-rating img {
+        width: 12px;
+    }
+    .mg-home3-toprated-section .mg-toprated-grid .mg-pricing {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 371px){
+    /*
+    * image with text overlay
+    */
+    .mg-overlay-text h6 {
+        font-size: 10px;
+    }
+    .mg-overlay-text span {
+        font-size: 7px;
+    }
+    .mg-overlay-text h6 {
+        margin-bottom: 5px;
+    }
+    .mg-overlay-text a {
+        font-size: 7px;
+    }
+    /***********************/
+    
+    /*
+    *Tab section
+    */
+    .mg-tabs-box .nav-tabs .nav-link.active {
+        font-size: 7px;
+    }
+    .mg-tabs-box .nav-tabs .nav-link {
+        font-size: 7px;
+    }
+    .mg-tab-text h5 {
+        font-size: 10px;
+    }
+    .mg-pricing {
+        font-size: 14px;
+    }
+    .mg-wishlist-icon img {
+        width: 14px;
+    }
+    /***************************/
+    
+    /*
+    * Container fit silder section
+    */
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text > span {
+        font-size: 7px;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text h2 {
+        font-size: 14px;
+    }
+    .mg-rating span i {
+        font-size: 8px;
+    }
+    .mg-container-fit-slider .mg-slider-section .mg-slide-text {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    .mg-container-fit-slider a.mg-shop-btn {
+        font-size: 10px;
+    }
+    .mg-container-fit-slider .mg-slider-section ul.slick-dots {
+        justify-content: center;
+    }
+    /********************************************/
+    
+    /*
+    *Text with background image and carousel
+    */
+    .mg-custome-section .mg-pricing span {
+        font-size: 10px;
+    }
+    .mg-custome-section .mg-carousel button.next-arrow {
+        height: 31px;
+        width: 31px;
+        line-height: 16px;
+    }
+    .mg-custome-section .mg-carousel button.prev-arrow {
+        height: 31px;
+        width: 31px;
+        line-height: 16px;
+    }
+    /************************************/
+    
+    /*
+    * social media section
+    */
+    .mg-section-heading h5 {
+        font-size: 18px;
+    }
+    /*************************/
+    
+    /*
+    *top rated section
+    */
+    .mg-toprated-text a h6 {
+        font-size: 12px;
+    }
+    .mg-toprated-grid .mg-pricing {
+        font-size: 12px;
+    }
+    .mg-toprated-text span {
+        font-size: 12px;
+    }
+    /*********************/
+        /*
+        *Single-product page
+        */
+    
+    /*
+    *description tab section
+    */
+    .mg-description-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        padding: 7px 15px;
+        font-size: 8px;
+    }
+    /********************/
+    /*******************************/
+    /*
+            *checkout page
+            */
+            
+    /*
+    *checkout page section
+    */
+    .mg-checkout-tab .mg-tabs-box .nav-tabs .nav-link.active {
+        padding: 5px;
+        margin: 0 0;
+    }
+    .mg-checkout-tab .mg-tabs-box .nav-tabs .nav-link {
+        padding: 5px;
+        margin: 0 0;
+    }
+    .mg-co-order-details-heading h5 {
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .mg-co-form-heading h5 {
+        font-size: 18px;
+    }
+    .mg-co-add-more-info a {
+        font-size: 18px;
+    }
+    /*************/
+    /******************/
+            /*
+            *Home 3 page
+            */
+   /*
+   *container fit background image with text
+   */
+   .mg-home3-cf-bg-img-section .mg-cf-text.mg-left-aligment {
+        width: 90%;
+    }
+    /************/
+    /*
+    *Top rated product section
+    */
+    .mg-home3-toprated-section .mg-toprated-heading h5 {
+        font-size: 20px;
+    }
+    .mg-toprated-section.mg-home2-toprated-section.mg-home3-toprated-section.mg-padding-lr {
+        padding-top: 0;
+    }
+    
+        
+}
+@media screen and (max-width: 389px){
+    
+    /*
+    * Shop page style here
+    */
+    
+    /*
+    *Page header section
+    */
+    .mg-page-header-section .mg-page-header-heading h3 {
+        font-size: 22px;
+    }
+    /***************/
+    
+    /*
+     *Category top rated products and text overlay section
+     */
+    
+    .mg-toprated-grid2 .mg-toprated-thumb-img {
+        width: 90px;
+    }
+    /****************************/
+            /*
+            *blogs page
+            */
+    
+    /*
+    *blogs page header
+    */
+    .mg-page-header-section3 {
+        height: 140px;
+    }
+    .mg-page-header-section3 .mg-page-header-heading h3 {
+        font-size: 20px;
+    }
+    /********************/
+    /********************************/
+}    
+@media screen and (max-width: 338px){
+    
+    /*
+    * navigation section
+    */
+    
+    .mg-logo {
+        font-size: 20px;
+    }
+    /*********************/
+    /*
+    * Header filter section
+    */
+    .mg-category-filter .dropdown a.mg-dropdown-btn {
+        font-size: 10px;
+    }
+    .mg-category-filter .dropdown a.mg-dropdown-btn {
+        padding: 11px 7px;
+    }
+    /********************/
+        /*
+            *blogs page
+            */
+    
+    /*
+    *blogs page header
+    */
+    .mg-blogs-grid-box {
+        width: 80%;
+        margin: auto;
+    }
+    /***************/
+}
+@media screen and (max-width: 334px){
+    .mg-range-slide span {
+        font-size: 9px;
+    }
+    
+        /*
+        *Single-product page
+        */
+        
+    /*
+    *product details section
+    */    
+    .mg-product-details-box .mg-product-heading {
+        font-size: 18px;
+    }
+    .mg-discount-heading span {
+        font-size: 16px;
+    }
+    .mg-price span {
+        font-size: 16px;
+    }
+    .mg-product-details-list ul li {
+        font-size: 10px;
+    }
+    .mg-ad-cart-btn  a.mg-shop-btn {
+        font-size: 10px;
+    }
+    .mg-feature-info-box {
+        margin-bottom: 10px;
+    }
+    /*
+    *description tab section
+    */
+    .mg-reviewer-name span {
+        font-family: sora-bold;
+        font-size: 10px;
+    }
+    .mg-review-text .mg-rating span i {
+        font-size: 8px;
+    }
+    .mg-description-tab-section .mg-tabs-box .nav-tabs .nav-link {
+        margin: 0 2px;
+    }
+    /*************************/
+}
